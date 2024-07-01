@@ -8,6 +8,9 @@ module.exports = {
 	darkMode: 'class',
 	theme: {
 		extend: {
+			margin: {
+				'-50': '-50px',
+			},
 			spacing: {
 				'15': '60px',
 			},

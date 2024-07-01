@@ -14,10 +14,10 @@ import hearticon from '../../public/images/hearticon.svg';
 
 const Footer = () => {
   return (
-    <footer className="py-12 text-white" style={{background: '#021723'}}>
+    <footer className="py-12 text-white" style={{background: '#021723', fontFamily: 'Helvetica, Arial, sans-serif'}}>
       <div className="container px-6 mx-auto">
-        <div className="flex flex-row justify-between">
-          <div className="flex flex-col w-full mb-6 lg:w-1/4 basis-[40%]"> {/* mainpart */}
+        <div className="flex flex-col justify-between lg:flex-row">
+          <div className="flex flex-col w-full mb-6 lg:w-1/4 basis-[30%]"> {/* mainpart */}
             <div className="flex items-center mb-4">
               <Image
                 src={logoLight}
@@ -45,7 +45,7 @@ const Footer = () => {
               <Image src={hearticon} className="inline w-8" alt="Heart" width="24px" height="24px" />
             </span>
           </div>
-          <div className="flex flex-wrap justify-between w-full lg:w-2/4 basis-[35%]" style={{fontFamily: "poppins"}}>
+          <div className="flex flex-wrap justify-between w-full lg:w-2/4 basis-[40%]" style={{fontFamily: "Helvetica, Arial, sans-serif"}}>
             <div className="w-full mb-6 sm:w-1/2 lg:w-1/4">
               <h3 className="mb-3 text-lg font-semibold" style={{fontSize: "17px"}}>Overview</h3>
               <ul style={{fontSize: "14px"}}>
@@ -83,7 +83,7 @@ const Footer = () => {
               </ul>
             </div>
           </div>
-          <div className="w-full mb-6 sm:w-1/2 lg:w-1/4 basis-[25%]] justify-self-end" style={{fontSize: "17px", fontFamily: "poppins", marginLeft: '100px'}}>
+          <div className="w-full mb-6 sm:w-1/2 lg:w-1/4 basis-[25%] lg:ml-auto" style={{fontSize: "17px", fontFamily: "Helvetica, Arial, sans-serif"}}>
             <h3 className="mb-3 text-lg font-semibold">Contact Info</h3>
             <ul style={{fontSize: "14px"}}>
               <li style={{fontSize: "21px", color: "#2596BE"}} className='my-2'>
@@ -123,7 +123,7 @@ const Footer = () => {
             </ul>
           </div>
         </div>
-        <div className="pt-6 mt-6 text-center border-gray-700">
+        <div className="pt-6 mt-6 text-center border-t border-gray-700">
           <p className="text-sm">&copy; 2024 Boston Innovations. All Rights Reserved.</p>
         </div>
       </div>

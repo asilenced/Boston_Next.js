@@ -10,14 +10,14 @@ function PagesMetaHead({ title, keywords, description }) {
 			<meta name="keywords" content={keywords} />
 			<meta name="description" content={description} />
 			<meta charSet="utf-8" />
-			<link rel="icon" href="/favicon.ico" />
-			<title>{title}</title>
+			<link rel="icon" href="/images/logo-light.svg" />
+			<title>Boston Innovations Corporation</title>
 		</Head>
 	);
 }
 
 PagesMetaHead.defaultProps = {
-	title: 'Next.js & TailwindCSS Portfolio Project',
+	title: 'Boston Innovations Corporation',
 	keywords: 'next.js, react, web, ui',
 	keywords: 'Simple and multi-page next.js and react application',
 };
