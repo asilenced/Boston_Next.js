@@ -27,9 +27,26 @@ const Opportunity = ({ open, title, des, months, titlesize }) => {
           <span>Virtual Options</span>
         </div>
       </div>
-      <button
+      {/* <button
         className="self-center py-4 rounded-lg justify-items-center px-28"
         style={{background: '#2596BE'}}
+      >
+        <span className="text-2xl leading-tight text-center text-white">
+          Apply now
+        </span>
+      </button> */}
+      <button
+        className="
+          self-center
+          py-4
+          rounded-lg
+          justify-items-center
+          px-28
+          bg-[#2596BE]
+          hover:bg-[#1E7BA7]
+          transition
+          duration-300
+        "
       >
         <span className="text-2xl leading-tight text-center text-white">
           Apply now

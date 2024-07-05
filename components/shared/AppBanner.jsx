@@ -92,7 +92,7 @@ const AppBanner = () => {
             >
               Founded by a group of ambitious Boston area engineering students and faculty, Boston Innovations Corporation stands at the forefront of biomedical technology and innovation.
             </span>
-            <button
+            {/* <button
               style={{
                 fontFamily: "Helvetica, Arial, sans-serif",
                 fontWeight: 500,
@@ -109,11 +109,36 @@ const AppBanner = () => {
                 width: "193px",
                 top: "calc(50%-52px/2)"
               }}
-              className="px-4 py-2 my-5 text-left text-white duration-300 bg-indigo-500 rounded-sm shadow-sm 24 myblock font-general-medium sm:hidden text-md hover:bg-indigo-600"
+              className="px-4 py-2 my-5 text-left text-white duration-300 rounded-sm shadow-sm 24 myblock font-general-medium sm:hidden text-md hover:bg-[#1E7BA7]"
               aria-label="Learn More Button"
             >
               Learn More
-            </button>
+            </button> */}
+            <button
+							style={{fontFamily: "Helvetica, Arial, sans-serif"}}
+							className="
+								font-medium
+								text-[17px]
+								text-[#F8F8F8]
+								leading-[20px]
+								flex
+								justify-center
+								items-center
+								bg-[#2596BE]
+								rounded-[20px]
+								px-[41px]
+								py-[16px]
+								gap-[10px]
+								w-auto
+								hover:bg-[#1E7BA7] /* Slightly darker shade */
+								transition
+								duration-300
+                mb-5
+							"
+							aria-label="Book Meeting Button"
+						>
+							Learn More
+						</button>
             <span
               style={{
                 fontFamily: 'Helvetica, Arial, sans-serif',

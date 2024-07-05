@@ -39,6 +39,27 @@ a {
 	background-clip: padding-box;
   }
 
+  .custom-button {
+	font-family: "Helvetica, Arial, sans-serif";
+	font-weight: 500;
+	font-size: 17px;
+	color: #F8F8F8;
+	line-height: 20px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background: #2596BE;
+	border-radius: 20px;
+	padding: 16px 55px;
+	gap: 10px;
+	width: auto;
+	transition: background-color 0.3s ease; /* Smooth transition for the background color */
+  }
+  
+  .custom-button:hover {
+	background-color: #165e80; /* Slightly darker shade of the original background color */
+  }
+
 /* Fonts */
 @font-face {
 	font-family: 'GeneralSans-Variable';

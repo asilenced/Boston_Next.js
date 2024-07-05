@@ -11,8 +11,28 @@ const ProjectItem2 = ({ title, description, description1, image }) => {
             <p className="mb-5" style={{fontSize: '17px', lineHeight: '26px', color: '#F8F8F8'}}>{description1}</p>
           </div>
           <div>
-            <button
+            {/* <button
               style={{boxSizing: 'border-box', background: '#0B556F', border: '1px solid #0B556F', borderRadius: '20px', width: '262.75px', height: '52px', fontSize: '17px', lineHeight: '20px'}}
+            >
+              View this project
+            </button> */}
+            <button
+              className="
+                box-border
+                bg-[#0B556F]
+                border
+                border-[#0B556F]
+                rounded-[20px]
+                w-[262.75px]
+                h-[52px]
+                text-[17px]
+                leading-[20px]
+                text-white
+                transition
+                duration-300
+                hover:bg-[#083A48]
+                hover:border-[#083A48]
+              "
             >
               View this project
             </button>

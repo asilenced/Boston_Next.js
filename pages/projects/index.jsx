@@ -83,12 +83,30 @@ function index() {
 					<span>Please reach out to the link below or text our company line! We would love to partner with others who are as passionate in science as we are! </span>
 				</div>
 				<div className="flex justify-center mx-auto mt-5" style={{display: 'flex', justifyContent: 'center', alignItems: 'center'}}>
-					<button
+					{/* <button
 						style={{padding: '15px 111px', background: '#2596BE', border: '1px solid #2596BE', borderRadius: '15px'}}
 						className="justify-items-center"
 					>
 						<span style={{fontSize: '25px', lineHeight: '30px', color: '#FFFFFF'}}>Info</span>
+					</button> */}
+					<a href='mailto:outreach@bostoninnovations.org'>
+					<button
+					className="
+						px-[111px]
+						py-[15px]
+						bg-[#2596BE]
+						rounded-[15px]
+						justify-items-center
+						hover:bg-[#1E7BA7]
+						transition
+						duration-300
+					"
+					>
+					<span href='mailto:outreach@bostoninnovations.org' className="text-[25px] leading-[30px] text-white">
+						Info
+					</span>
 					</button>
+					</a>
 				</div>
 			</div>
 		</motion.section>

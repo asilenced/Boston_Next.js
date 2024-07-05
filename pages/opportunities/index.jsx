@@ -26,28 +26,41 @@ function Index() {
               <span className="text-6xl font-semibold text-blue-500" style={{color: '#2596BE'}}>Boston Innovations</span>
               <span className="text-6xl font-semibold text-white">Opportunities</span>
               <button
-                style=
-                {{  
-                    fontFamily: "Helvetica, Arial, sans-serif",
-                    fontWeight: 500,
-                    fontSize: "17px",
-                    color: "#F8F8F8",
-                    lineHeight: "20px",
-                    display: "flex",
-                    background: "#2596BE",
-                    justifyContent: "center",
-                    alignItems: "center",
-                    borderRadius: "20px",
-                    border: "1px solid #2596BE",
-                    padding: "16px 41px",
-                    gap: "10px",
-                    width: 'auto'
-                }}
-                className="block w-24 px-4 py-2 text-left text-white duration-300 bg-indigo-500 rounded-sm shadow-sm mt-15 font-general-medium sm:hidden text-md hover:bg-indigo-600"
-                aria-label="Book Meeting Button"
-            >
+                className='mt-15 custom-button'
+                style={{fontFamily: 'Helvetica, Arial, sans-serif'}}
+              >
                 Scan to learn more!
-            </button>
+              </button>
+              {/* <button
+                className="
+                  font-sans
+                  font-medium
+                  text-[17px]
+                  text-[#F8F8F8]
+                  leading-[20px]
+                  flex
+                  bg-[#2596BE]
+                  justify-center
+                  items-center
+                  rounded-[20px]
+                  px-[41px]
+                  py-[16px]
+                  gap-[10px]
+                  w-auto
+                  block
+                  text-left
+                  duration-300
+                  shadow-sm
+                  mt-4
+                  sm:hidden
+                  text-md
+                  hover:bg-[#1E7BA7]
+                "
+                aria-label="Book Meeting Button"
+              >
+                Scan to learn more!
+              </button> */}
+              
               <div className="p-5 mt-7 md:w-2/5">
                 <Image src={qrmark} alt="QR Code" />
               </div>

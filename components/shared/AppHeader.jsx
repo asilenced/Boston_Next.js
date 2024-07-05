@@ -5,6 +5,7 @@ import { motion } from 'framer-motion';
 import { FiSun, FiMoon, FiX, FiMenu } from 'react-icons/fi';
 import logoLight from '../../public/images/logo-light.svg';
 import useThemeSwitcher from '../../hooks/useThemeSwitcher';
+import LinkButton from './ButtonLink';
 
 function AppHeader() {
 	const [showMenu, setShowMenu] = useState(false);
@@ -105,78 +106,47 @@ function AppHeader() {
 					<div 
 						style={{fontFamily: "Helvetica, Arial, sans-serif", fontWeight: 500, fontSize: "17px", color: "#FFFFFF", lineHeight: "20px"}}
 						className="block pt-3 mb-2 text-lg text-left border-t-2 text-primary-dark dark:text-ternary-light hover:text-secondary-dark dark:hover:text-secondary-light sm:mx-4 sm:py-2 sm:pt-2 sm:border-t-0 border-primary-light dark:border-secondary-dark">
-						<Link href="/login" aria-label="login">
+						<Link href="" aria-label="login">
 							Log In
 						</Link>
 					</div>
 					<div className="pt-3 border-t-0 sm:pt-0 sm:border-t-0 border-primary-light dark:border-secondary-dark">
-						<button
-							style={{fontFamily: "Helvetica, Arial, sans-serif",
-									fontWeight: 500,
-									fontSize: "17px",
-									color: "#F8F8F8",
-									lineHeight: "20px",
-									display: "flex",
-									background: "#2596BE",
-									justifyContent: "center",
-									alignItems: "center",
-									borderRadius: "20px",
-									border: "1px solid #2596BE",
-									padding: "16px 41px",
-									gap: "10px",
-									width: "auto",
-							}}
-							className="block w-24 px-4 py-2 text-left text-white duration-300 bg-indigo-500 rounded-sm shadow-sm font-general-medium sm:hidden text-md hover:bg-indigo-600"
-							aria-label="Book Meeting Button"
-						>
-							Book Meeting
-						</button>
+					<button
+						style={{fontFamily: "Helvetica, Arial, sans-serif",
+								fontWeight: 500,
+								fontSize: "17px",
+								color: "#F8F8F8",
+								lineHeight: "20px",
+								display: "flex",
+								background: "#2596BE",
+								justifyContent: "center",
+								alignItems: "center",
+								borderRadius: "20px",
+								border: "1px solid #2596BE",
+								padding: "16px 41px",
+								gap: "10px",
+								width: "auto",
+								
+						}}
+						className="block w-24 px-4 py-2 text-left text-white duration-300 rounded-sm shadow-sm font-general-medium sm:hidden text-md"
+						aria-label="Book Meeting Button"
+					>
+						Book Meeting
+					</button>
 					</div>
 				</div>
-
+				
 				{/* Header links large screen */}
 				<div className="items-center justify-center hidden p-5 m-0 mt-5 shadow-lg font-general-medium sm:ml-4 sm:mt-3 sm:flex sm:p-0 sm:shadow-none">
-					<div
-						style={{fontFamily: "Helvetica, Arial, sans-serif", fontWeight: 500, fontSize: "17px", color: "#FFFFFF", lineHeight: "20px"}}
-						className="block mb-2 text-lg font-medium text-left text-primary-dark dark:text-ternary-light hover:text-secondary-dark dark:hover:text-secondary-light sm:mx-4 sm:py-2"
-						aria-label="Projects"
-					>
-						<Link href="/projects">Projects</Link>
-					</div>
-					<div
-						style={{fontFamily: "Helvetica, Arial, sans-serif", fontWeight: 500, fontSize: "17px", color: "#FFFFFF", lineHeight: "20px"}}
-						className="block mb-2 text-lg font-medium text-left text-primary-dark dark:text-ternary-light hover:text-secondary-dark dark:hover:text-secondary-light sm:mx-4 sm:py-2"
-						aria-label="About Me"
-					>
-						<Link href="/partners">Partners</Link>
-					</div>
-
-					<div
-						style={{fontFamily: "Helvetica, Arial, sans-serif", fontWeight: 500, fontSize: "17px", color: "#FFFFFF", lineHeight: "20px"}}
-						className="block mb-2 text-lg font-medium text-left text-primary-dark dark:text-ternary-light hover:text-secondary-dark dark:hover:text-secondary-light sm:mx-4 sm:py-2"
-						aria-label="Contact"
-					>
-						<Link href="/company">Our Company</Link>
-					</div>
-
-					<div
-						style={{fontFamily: "Helvetica, Arial, sans-serif", fontWeight: 500, fontSize: "17px", color: "#FFFFFF", lineHeight: "20px"}}
-						className="block mb-2 text-lg font-medium text-left text-primary-dark dark:text-ternary-light hover:text-secondary-dark dark:hover:text-secondary-light sm:mx-4 sm:py-2"
-						aria-label="Contact"
-					>
-						<Link href="/opportunities">Opportunities</Link>
-					</div>
+					<LinkButton linkname={"/projects"} title={"Projects"} />
+					<LinkButton linkname={"/partners"} title={"Partners"} />
+					<LinkButton linkname={"/company"} title={"Our Comapny"} />
+					<LinkButton linkname={"/opportunities"} title={"Opportunities"} />
 				</div>
 				<div className="items-center justify-center hidden p-5 m-0 mt-5 shadow-lg font-general-medium sm:ml-4 sm:mt-3 sm:flex sm:p-0 sm:shadow-none">
-					<div
-						style={{fontFamily: "Helvetica, Arial, sans-serif", fontWeight: 500, fontSize: "17px", color: "#FFFFFF", lineHeight: "20px"}}
-						className="block mb-2 text-lg font-medium text-left text-primary-dark dark:text-ternary-light hover:text-secondary-dark dark:hover:text-secondary-light sm:mx-4 sm:py-2"
-						aria-label="Contact"
-					>
-						<Link href="/login">Log In</Link>
-					</div>
+				    <LinkButton linkname={""} title={"Log In"} />
 					<div className="pt-3 border-t-2 sm:pt-0 sm:border-t-0 border-primary-light dark:border-secondary-dark">
-						<button
+						{/* <button
 							style={{fontFamily: "Helvetica, Arial, sans-serif",
 									fontWeight: 500,
 									fontSize: "17px",
@@ -193,7 +163,31 @@ function AppHeader() {
 									width: "193px",
 									top: "calc(50%-52px/2)"
 							}}
-							className="block w-24 px-4 py-2 text-left text-white duration-300 bg-indigo-500 rounded-sm shadow-sm font-general-medium sm:hidden text-md hover:bg-indigo-600"
+							className="block w-24 px-4 py-2 text-left text-white duration-300 rounded-sm shadow-sm font-general-medium sm:hidden text-md hover:bg-[#1E7BA7]"
+							aria-label="Book Meeting Button"
+						>
+							Book Meeting
+						</button> */}
+						<button
+							style={{fontFamily: "Helvetica, Arial, sans-serif"}}
+							className="
+								font-medium
+								text-[17px]
+								text-[#F8F8F8]
+								leading-[20px]
+								flex
+								justify-center
+								items-center
+								bg-[#2596BE]
+								rounded-[20px]
+								px-[41px]
+								py-[16px]
+								gap-[10px]
+								w-auto
+								hover:bg-[#1E7BA7] /* Slightly darker shade */
+								transition
+								duration-300
+							"
 							aria-label="Book Meeting Button"
 						>
 							Book Meeting

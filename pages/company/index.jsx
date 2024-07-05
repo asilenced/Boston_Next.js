@@ -101,20 +101,25 @@ function Index() {
             <div className='flex flex-row flex-wrap justify-center mx-auto space-x-3'>
               <Profile 
                 image={pro1}
+                linkedin={"https://www.linkedin.com/in/nicholas-irving-393787221/"}
+                mail={"Nicholasirving@bostoninnovations.org"}
                 role={"FOUNDER & CEO"}
                 name={"Nicholas Irving"}
                 des={"Nick has taken classes at both Harvard Medical School and MIT. He received the 2024 MIT Young Biotech Leaders Scholarship and is currently a Scientific Researcher at the Dana-Farber Cancer Institute and has previously worked at Beth Israel Deaconess Medical Center."}
               />
               <Profile 
                 image={pro2}
+                linkedin={"https://www.linkedin.com/in/angelina-nguyen-2a348a279/"}
+                mail={"AngelinaNguyen@bostoninnovations.org"}
                 role={"DIRECTOR OF FINANCE"}
-                name={"Emmet Charney"}
+                name={"Angelian Nguyen"}
                 des={"Angelina is a mathematics student at UC Berkeley with a strong background in event coordination and leadership. An Event Coordinator for Hack Club, she organized her own hackathon and additionally won the HackMIT 2024 competition.  "}
               />
               <Profile 
                 image={pro3}
-                role={"FOUNDER & CEO"}
-                name={"Nicholas Irving"}
+                linkedin={"https://www.linkedin.com/in/emmetcharney/"}
+                role={"DIRECTOR OF FINANCE"}
+                name={"Emmet Charney"}
                 des={"Emmet is an undergraduate student at the University of Virginia's Darden School of Business. Emmet has served as a Financial Analyst Intern at Stonehaven Capital Management, and gained experience consulting through his internship at McKinsey & Company."}
               />
             </div>
@@ -127,9 +132,11 @@ function Index() {
               />
               <Profile 
                 image={pro5}
-                role={"FOUNDER & CEO"}
-                name={"Nicholas Irving"}
-                des={"Emmet is an undergraduate student at the University of Virginia's Darden School of Business. Emmet has served as a Financial Analyst Intern at Stonehaven Capital Management, and gained experience consulting through his internship at McKinsey & Company."}
+                linkedin={"https://www.linkedin.com/in/piotr-kierner-4b8678172/"}
+                mail={"PiotrKierner@bostoninnovations.org"}
+                role={"CHIEF STRATEGY OFFICER"}
+                name={"Piotr Kierner"}
+                des={"Piotr is a neuroscience student with extensive experience in the intersection of healthcare and engineering. Over the past two years, he has worked at Harvard's MIND Neuroscience Lab, Massachusetts General Hospital, and currently, the Sinclair Lab at Harvard's Genetics Department."}
               />
             </div>
           </div>

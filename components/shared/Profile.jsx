@@ -3,7 +3,7 @@ import discordicon from '../../public/images/discordicon.svg';
 import inicon from '../../public/images/inicon.svg';
 import mailicon from '../../public/images/mailicon.svg';
 
-const Profile = ({image, role, name, des}) => {
+const Profile = ({image, role, name, des, linkedin, mail}) => {
     return (
         <div className="flex flex-col mt-10 mb-10" style={{color: '#FFFFFF'}}>
             <div>
@@ -20,8 +20,8 @@ const Profile = ({image, role, name, des}) => {
             </div>
             <div className="flex mx-auto space-x-3">
               <a><Image src={discordicon} className="inline" style={{width: '30px', height: '30px'}} alt="Discord" /></a>
-              <a><Image src={inicon} className="inline" style={{width: '27px', height: '27px'}} alt="LinkedIn" /></a>
-              <a><Image src={mailicon} className="inline" style={{width: '27px', height: '27px'}} alt="EMail" /></a>
+              <a href={linkedin} target="_blank"><Image src={inicon} className="inline" style={{width: '27px', height: '27px'}} alt="LinkedIn" /></a>
+              <a href={`mailto:${mail}`}><Image src={mailicon} className="inline" style={{width: '27px', height: '27px'}} alt="EMail" /></a>
             </div> 
         </div>
     )

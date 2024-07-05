@@ -208,7 +208,7 @@ function Index() {
               className="flex justify-center mx-auto mt-5"
               style={{ display: 'flex', justifyContent: 'center', alignItems: 'center' }}
             >
-              <button
+              {/* <button
                 style={{
                   padding: '15px 111px',
                   background: '#2596BE',
@@ -226,7 +226,26 @@ function Index() {
                 >
                   Info
                 </span>
-              </button>
+              </button> */}
+              
+					<a href='mailto:outreach@bostoninnovations.org'>
+          <button
+					className="
+						px-[111px]
+						py-[15px]
+						bg-[#2596BE]
+						rounded-[15px]
+						justify-items-center
+						hover:bg-[#1E7BA7]
+						transition
+						duration-300
+					"
+					>
+					<span className="text-[25px] leading-[30px] text-white">
+						Info
+					</span>
+					</button>
+          </a>
             </div>
           </div>
         </motion.section>
