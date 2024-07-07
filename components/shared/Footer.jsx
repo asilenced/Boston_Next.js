@@ -11,7 +11,7 @@ import contactemail from '../../public/images/contactemail.svg';
 import contactnum from '../../public/images/contactnum.svg';
 import contactweb from '../../public/images/contactweb.svg';
 import hearticon from '../../public/images/hearticon.svg';
-import LinkButton from './ButtonLink';
+import LinkButton1 from './ButtonLink1';
 
 const Footer = () => {
   return (
@@ -50,37 +50,37 @@ const Footer = () => {
             <div className="w-full mb-6 sm:w-1/2 lg:w-1/4">
               <h3 className="mb-3 text-lg font-semibold" style={{fontSize: "17px"}}>Overview</h3>
               <ul style={{fontSize: "14px"}}>
-                <li className='my-5'><LinkButton title={"Projects"} footer={"1"} linkname={""} /></li>
-                <li className='my-5'><LinkButton title={"Partner"} footer={"1"} linkname={""} /></li>
-                <li className='my-5'><LinkButton title={"Our Company"} footer={"1"} linkname={""} /></li>
-                <li className='my-5'><LinkButton title={"Opportunities"} footer={"1"} linkname={""} /></li>
+                <li className='my-5'><LinkButton1 title={"Projects"} footer={"1"} linkname={""} /></li>
+                <li className='my-5'><LinkButton1 title={"Partner"} footer={"1"} linkname={""} /></li>
+                <li className='my-5'><LinkButton1 title={"Our Company"} footer={"1"} linkname={""} /></li>
+                <li className='my-5'><LinkButton1 title={"Opportunities"} footer={"1"} linkname={""} /></li>
               </ul>
             </div>
             <div className="w-full mb-6 sm:w-1/2 lg:w-1/4">
               <h3 className="mb-3 text-lg font-semibold" style={{fontSize: "17px"}}>Company</h3>
               <ul style={{fontSize: "14px", lineHeight: "20px"}}>
-                <li className='my-5'><LinkButton title={"About Us"} footer={"1"} linkname={""} /></li>
-                <li className='my-5'><LinkButton title={"Blogs"} footer={"1"} linkname={""} /></li>
-                <li className='my-5'><LinkButton title={"Testimonials"} footer={"1"} linkname={""} /></li>
-                <li className='my-5'><LinkButton title={"Careers"} footer={"1"} linkname={""} /></li>
+                <li className='my-5'><LinkButton1 title={"About Us"} footer={"1"} linkname={""} /></li>
+                <li className='my-5'><LinkButton1 title={"Blogs"} footer={"1"} linkname={""} /></li>
+                <li className='my-5'><LinkButton1 title={"Testimonials"} footer={"1"} linkname={""} /></li>
+                <li className='my-5'><LinkButton1 title={"Careers"} footer={"1"} linkname={""} /></li>
               </ul>
             </div>
             <div className="w-full mb-6 sm:w-1/2 lg:w-1/4">
               <h3 className="mb-3 text-lg font-semibold" style={{fontSize: "17px"}}>Services</h3>
               <ul style={{fontSize: "14px", lineHeight: "20px"}}>
-                <li className='my-5'><LinkButton title={"Our AI Model"} footer={"1"} linkname={""} /></li>
-                <li className='my-5'><LinkButton title={"3PL Fulfillment"} footer={"1"} linkname={""} /></li>
-                <li className='my-5'><LinkButton title={"Freight & Shipping"} footer={"1"} linkname={""} /></li>
-                <li className='my-5'><LinkButton title={"Custom Packaging"} footer={"1"} linkname={""} /></li>
-                <li className='my-5'><LinkButton title={"Returns & Reverse Logistics"} footer={"1"} linkname={""} /></li>
+                <li className='my-5'><LinkButton1 title={"Our AI Model"} footer={"1"} linkname={""} /></li>
+                <li className='my-5'><LinkButton1 title={"3PL Fulfillment"} footer={"1"} linkname={""} /></li>
+                <li className='my-5'><LinkButton1 title={"Freight & Shipping"} footer={"1"} linkname={""} /></li>
+                <li className='my-5'><LinkButton1 title={"Custom Packaging"} footer={"1"} linkname={""} /></li>
+                <li className='my-5'><LinkButton1 title={"Returns & Reverse Logistics"} footer={"1"} linkname={""} /></li>
               </ul>
             </div>
             <div className="w-full mb-6 sm:w-1/2 lg:w-1/4">
               <h3 className="mb-3 text-lg font-semibold" style={{fontSize: "17px"}}>Legal</h3>
               <ul style={{fontSize: "14px", lineHeight: "20px"}}>
-                <li className='my-5'><LinkButton title={"Privacy"} title1={"Policy"} footer={"1"} linkname={""} /></li>
-                <li className='my-5'><LinkButton title={"Terms &"} title1={"Conditions"} footer={"1"} linkname={""} /></li>
-                <li className='my-5'><LinkButton title={"Help"} footer={"1"} linkname={""} /></li>
+                <li className='my-5'><LinkButton1 title={"Privacy"} title1={"Policy"} footer={"1"} linkname={""} /></li>
+                <li className='my-5'><LinkButton1 title={"Terms &"} title1={"Conditions"} footer={"1"} linkname={""} /></li>
+                <li className='my-5'><LinkButton1 title={"Help"} footer={"1"} linkname={""} /></li>
               </ul>
             </div>
           </div>
