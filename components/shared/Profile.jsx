@@ -20,7 +20,7 @@ const Profile = ({image, role, name, des, linkedin, mail}) => {
             </div>
             <div className="flex mx-auto space-x-3">
               <a><Image src={discordicon} className="inline" style={{width: '30px', height: '30px'}} alt="Discord" /></a>
-              <a href={linkedin} target="_blank"><Image src={inicon} className="inline" style={{width: '27px', height: '27px'}} alt="LinkedIn" /></a>
+              <a href={linkedin}><Image src={inicon} className="inline" style={{width: '27px', height: '27px'}} alt="LinkedIn" /></a>
               <a href={`mailto:${mail}`}><Image src={mailicon} className="inline" style={{width: '27px', height: '27px'}} alt="EMail" /></a>
             </div> 
         </div>

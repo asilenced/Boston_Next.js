@@ -33,7 +33,7 @@ function AppHeader() {
 								width={150}
 								height={120}
 							/>
-							<span className='float-right px-2 font-bold' style={{color: "#FFFFFF", fontFamily: 'Helvetica, Arial, sans-serif'}} >
+							<span className='hidden float-right px-2 font-bold lg:block' style={{color: "#FFFFFF", fontFamily: 'Helvetica, Arial, sans-serif'}} >
 								Boston Innovations<br/>Corporation
 							</span>
 						</Link>
@@ -63,7 +63,7 @@ function AppHeader() {
 				<div
 					className={
 						showMenu
-							? 'block m-0 lg:ml-4 lg:mt-3 lg:flex px-5 py-3 lg:p-0 justify-between items-center shadow-lg lg:shadow-none'
+							? 'block m-0 lg:ml-4 lg:mt-3 lg:hidden px-5 py-3 lg:p-0 justify-between items-center shadow-lg lg:shadow-none'
 							: 'hidden'
 					}
 				>
@@ -132,6 +132,9 @@ function AppHeader() {
 					<LinkButton linkname={"/partners"} title={"Partners"} />
 					<LinkButton linkname={"/company"} title={"Our Company"} />
 					<LinkButton linkname={"/opportunities"} title={"Opportunities"} />
+				</div>
+				
+				<div className='items-center justify-center hidden p-5 m-0 mt-5 shadow-lg font-general-medium lg:ml-4 lg:mt-3 lg:flex lg:p-0 lg:shadow-none'>
 					<LinkButton linkname={""} title={"Log In"} />
 					<button
 						style={{fontFamily: "Helvetica, Arial, sans-serif"}}

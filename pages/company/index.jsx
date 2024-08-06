@@ -45,7 +45,7 @@ function Index() {
           // className='-ml-50'
         >
           <div className='container mx-auto'>
-            <div className='flex items-center justify-between mx-auto' style={{ color: '#2596BE', fontSize: '45px', lineHeight: '36px', textAlign: 'center', marginTop: '100px' }}>
+            <div className='flex flex-wrap items-center justify-between mx-auto' style={{ color: '#2596BE', fontSize: '45px', lineHeight: '36px', textAlign: 'center', marginTop: '100px' }}>
               <div className='flex justify-center flex-1 mt-5 mb-5'>
                 <span>6+ Founders</span>
               </div>
@@ -154,7 +154,7 @@ function Index() {
             </div>
           </div>
           <div className='container flex flex-col items-center justify-center mx-auto mt-10'>
-            <div className='flex flex-row flex-wrap justify-center mt-10 md:space-x-10 space-y-5'>
+            <div className='flex flex-row flex-wrap justify-center mt-10 space-y-5 md:space-x-10'>
               <ProfileCard 
                 image={member1}
                 name="Dr.James Hillis"

@@ -32,9 +32,9 @@ const Footer = () => {
               </span>
             </div>
             <div className="flex space-x-3">
-              <a href="https://discord.gg/6Z73xt5fWJ" target='_blank'><Image src={logodiscord} className="inline w-7" alt="Discord" /></a>
+              <a href="https://discord.gg/6Z73xt5fWJ"><Image src={logodiscord} className="inline w-7" alt="Discord" /></a>
               <a href=""><Image src={logox} className="inline w-7" alt="Twitter" /></a>
-              <a href="https://www.linkedin.com/company/boston-innovations/" target='_blank'><Image src={logolink} className="inline w-7" alt="LinkedIn" /></a>
+              <a href="https://www.linkedin.com/company/boston-innovations/"><Image src={logolink} className="inline w-7" alt="LinkedIn" /></a>
               <a href=""><Image src={logoinsta} className="inline w-7" alt="Instagram" /></a>
               <a href=""><Image src={logoyou} className="inline w-7" alt="YouTube" /></a>
             </div>
@@ -125,7 +125,7 @@ const Footer = () => {
           </div>
         </div>
         <div className="pt-6 mt-6 text-center border-t border-gray-700">
-          <a href='https://www.linkedin.com/company/boston-innovations/' target='_blank'><p className="text-sm">&copy; 2024 Boston Innovations. All Rights Reserved.</p></a>
+          <a href='https://www.linkedin.com/company/boston-innovations/'><p className="text-sm">&copy; 2024 Boston Innovations. All Rights Reserved.</p></a>
         </div>
       </div>
     </footer>

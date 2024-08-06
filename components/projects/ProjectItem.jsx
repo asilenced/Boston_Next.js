@@ -25,7 +25,7 @@ const ProjectItem = ({ title, description, description1, image }) => {
                     View this project
                 </button> */}
                 <button
-                  className="
+                  className='
                     box-border
                     bg-[#0B556F]
                     border
@@ -40,7 +40,7 @@ const ProjectItem = ({ title, description, description1, image }) => {
                     duration-300
                     hover:bg-[#083A48]
                     hover:border-[#083A48]
-                  "
+                  '
                 >
                   View this project
                 </button>
