@@ -10,13 +10,13 @@ const Profile = ({image, role, name, des, linkedin, mail}) => {
                 <Image 
                     src={image}
                     className="mx-auto"
-                    style={{borderRadius: '40px', width: '313px', height: '313px'}}
+                    style={{borderRadius: '40px', width: '250px', height: '250px'}}
                 />
             </div>
             <div className="flex flex-col justify-center px-10 py-5">
                 <span style={{fontSize: '12px', lineHeight: '160%', textAlign: 'center'}}>{role}</span>
                 <span style={{fontSize: '20px', lineHeight: '130%', textAlign: 'center'}}>{name}</span>
-                <span style={{fontSize: '12px', lineHeight: '19.2px', textAlign: 'center', width: '300px', color: '#B8B8B8', marginTop: '10px'}}>{des}</span>
+                <span style={{fontSize: '12px', lineHeight: '19.2px', textAlign: 'center', width: '240px', color: '#B8B8B8', marginTop: '10px'}}>{des}</span>
             </div>
             <div className="flex mx-auto space-x-3">
               <a><Image src={discordicon} className="inline" style={{width: '30px', height: '30px'}} alt="Discord" /></a>

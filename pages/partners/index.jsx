@@ -106,7 +106,7 @@ function Index() {
                 textAlign: 'center',
               }}
             >
-              <div className="flex justify-center flex-1 mt-5 mb-5">
+              <div className="flex flex-wrap justify-center flex-1 mt-5 mb-5">
                 <span style={{ color: '#2596BE' }}>Sponsored&nbsp;</span>
                 <span>&&nbsp;</span>
                 <span style={{ color: '#2596BE' }}>Related&nbsp;</span>
@@ -138,11 +138,12 @@ function Index() {
 					This list consists of various schools that we have students who contribute to research and innovation at our company!
 				</span>
 			</div>
-			<div className='flex flex-col flex-wrap justify-center mx-auto mt-15'>
-				<div className='flex flex-row flex-wrap justify-center mx-auto'>
+			<div className='flex flex-row flex-wrap justify-center mx-auto space-y-5 mt-15'>
+				<div className='flex flex-row flex-wrap justify-center mx-auto space-y-5'>
 					<Image 
 						src={res1}
-						style={{width: '235px', height: '234px', marginRight: '23px'}}
+            className='mt-5 mr-2 sm:mr-5'
+						style={{width: '235px', height: '234px'}}
 					/>
 					<Image 
 						src={res2}
@@ -154,13 +155,14 @@ function Index() {
 					/>
 					<Image 
 						src={res4}
-						style={{width: '235px', height: '234px'}}
+						style={{width: '235px', height: '234px', marginRight: '10px'}}
 					/>
 				</div>
-				<div className='flex flex-row flex-wrap justify-center mx-auto mt-5'>
+				<div className='flex flex-row flex-wrap justify-center mx-auto mt-5 space-y-5'>
 					<Image 
 						src={res5}
-						style={{width: '235px', height: '234px', marginRight: '23px'}}
+            className='mt-5 mr-2 sm:mr-5'
+						style={{width: '235px', height: '234px'}}
 					/>
 					<Image 
 						src={res6}

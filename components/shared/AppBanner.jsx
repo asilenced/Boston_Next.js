@@ -61,7 +61,7 @@ const AppBanner = () => {
             >
               We Help Create
             </span>
-			<div style={{height: '50px'}}>
+			<div className='h-[160px] lg:h-[110px]'>
 				<motion.span
 					style={{
 						fontFamily: 'Helvetica, Arial, sans-serif',
@@ -154,7 +154,7 @@ const AppBanner = () => {
               2024 MIT & Harvard Biotech<br />Group scholarship winner
             </span>
           </div>
-          <div className='self-start'>
+          <div className="self-start mx-auto mb-20 sm:mt-0 sm:mb-0">
             <Image
               src={markLogo}
               className="self-start inline w-30"

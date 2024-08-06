@@ -3,8 +3,8 @@ import Image from 'next/image';
 const MainPoint = ({title, subTitle, image, des1, des2, videosrc, type}) => {
     return (
         <div>
-            <div className="flex flex-col items-center mt-20 sm:justify-between sm:flex-row">
-            <div className="w-full text-left align-middle md:w-1/2">
+            <div className="flex flex-col items-center mt-20 lg:justify-between lg:flex-row">
+            <div className="w-full text-left align-middle lg:w-1/2">
                 <span
                 style={{
                     left: "10px",

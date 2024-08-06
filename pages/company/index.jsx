@@ -98,7 +98,7 @@ function Index() {
           // className='-ml-50'
         >
           <div className='container flex flex-col mx-auto'>
-            <div className='flex flex-row flex-wrap justify-center mx-auto space-x-3'>
+            <div className='flex flex-row flex-wrap justify-center'>
               <Profile 
                 image={pro1}
                 linkedin={"https://www.linkedin.com/in/nicholas-irving-393787221/"}
@@ -122,14 +122,6 @@ function Index() {
                 name={"Emmet Charney"}
                 des={"Emmet is an undergraduate student at the University of Virginia's Darden School of Business. Emmet has served as a Financial Analyst Intern at Stonehaven Capital Management, and gained experience consulting through his internship at McKinsey & Company."}
               />
-            </div>
-            <div className='flex flex-row flex-wrap justify-center mx-auto space-x-3'>
-              <Profile 
-                image={pro4}
-                role={"CHIEF OPERATIONS OFFICER "}
-                name={"Dr.James Hillis"}
-                des={"Digital Clinical Research and Artificial Intelligence, Director of Neurological Clinical Operations, Organization at Mass General Brigham"}
-              />
               <Profile 
                 image={pro5}
                 linkedin={"https://www.linkedin.com/in/piotr-kierner-4b8678172/"}
@@ -139,33 +131,6 @@ function Index() {
                 des={"Piotr is a neuroscience student with extensive experience in the intersection of healthcare and engineering. Over the past two years, he has worked at Harvard's MIND Neuroscience Lab, Massachusetts General Hospital, and currently, the Sinclair Lab at Harvard's Genetics Department."}
               />
             </div>
-          </div>
-          <div
-              style={{
-                background: '#021723',
-                position: 'relative',
-              }}
-          >
-            <div
-              className="container flex flex-col items-center justify-between mx-auto md:flex-row"
-              style={{
-                color: '#FFFFFF',
-                fontSize: '57px',
-                lineHeight: '70px',
-                textAlign: 'center',
-              }}
-            >
-              <div className="flex flex-col justify-center flex-1 mt-5 mb-5">
-                <span>Our current</span>
-                <span>innovation&nbsp;<span style={{color: '#2596BE'}}>team members</span></span>
-              </div>
-            </div>
-          </div>
-          <div className='container flex items-center justify-center p-5 mx-auto mt-5'>
-            <Image 
-              src={members}
-              style={{borderRadius: '40px', width: '1247px', height: 'auto'}}
-            />
           </div>
           <div
               style={{
@@ -189,12 +154,7 @@ function Index() {
             </div>
           </div>
           <div className='container flex flex-col items-center justify-center mx-auto mt-10'>
-            <div className='flex items-center justify-center p-12 mx-auto bg-gray-800 md:w-4/5 bg-opacity-80 rounded-2xl'>
-              <span className='text-base leading-loose text-center text-white md:text-lg'>
-                At Boston Innovations, we are dedicated to assembling a board of advisors comprised of the most passionate and experienced experts in the fields of science and development. Our advisors bring a wealth of knowledge and a diverse range of perspectives and expertise, ensuring that our team is guided by the best minds in the industry. Each advisor is carefully selected for their proven track record of success and their unwavering commitment to innovation.
-              </span>
-            </div>
-            <div className='flex flex-row flex-wrap justify-center mt-10 space-x-10'>
+            <div className='flex flex-row flex-wrap justify-center mt-10 md:space-x-10 space-y-5'>
               <ProfileCard 
                 image={member1}
                 name="Dr.James Hillis"

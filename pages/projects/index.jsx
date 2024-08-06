@@ -1,8 +1,6 @@
 import PagesMetaHead from '../../components/PagesMetaHead';
 import AppHeader from '../../components/shared/AppHeader';
 import { motion } from 'framer-motion';
-import Image from 'next/image';
-import photo1 from '../../public/images/photo1.png';
 import MainPoint from '../../components/shared/MainPoint';
 import ProjectItem from '../../components/projects/ProjectItem';
 import ProjectItem2 from '../../components/projects/ProjectItem2';
@@ -19,7 +17,8 @@ function index() {
         className='bg-local'
         style={{
           backgroundImage: `url(/images/back2.png)`,
-		  paddingBottom: '80px'
+		  paddingBottom: '80px',
+		  backgroundRepeat: 'repeat',
         }}
       >
 		<div className='container mx-auto'>
@@ -29,13 +28,13 @@ function index() {
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             transition={{ ease: 'easeInOut', duration: 0.9, delay: 0.2 }}
-			className='-ml-10'
+			// className='-ml-10'
           >
 			<div className='container mx-auto'>
 				{/* <AppHeader /> */}
 				<MainPoint type={"video"} videosrc={"/whycreate.mp4"} title={"Why Create"} subTitle={"Projects And Innovations?"} des1={"At Boston Innovations, we take innovation so seriously, it's literally in our name. Every individual harbors an intrinsic urge to create, innovate, and change the world around them. At Boston Innovations, we recognize and harness this universal drive, channeling it into the the development of advanced medical devices, cutting-edge pharmaceuticals, and comprehensive artificial intelligence healthcare systems."}/>
 			</div>
-			<div style={{ background: 'rgba(2, 23, 35, 0.8)', marginTop: '50px', width: '100vw', position: 'relative', left: '50%', right: '50%', marginLeft: '-50vw', marginRight: '-50vw' }}>
+			<div style={{ background: 'rgba(2, 23, 35, 0.8)', marginTop: '50px', width: '100%', position: 'relative', left: '50%', right: '50%', marginLeft: '-50vw', marginRight: '-50vw' }}>
 				<div className='container flex items-center justify-between mx-auto' style={{ color: '#2596BE', fontSize: '45px', lineHeight: '36px', textAlign: 'center' }}>
 					<div className='flex justify-center flex-1 mt-5 mb-5'>
 						<span>4+ Projects</span>
@@ -79,7 +78,7 @@ function index() {
 					<span style={{color: '#2596BE'}}>invest </span>
 					<span>into our projects?</span>
 				</div>
-				<div style={{fontSize: '17px', lineHeight: '30px', alignItems: 'center', textAlign: 'center', color: "#FFFFFF", width: '780px'}} className='mx-auto mt-5'>
+				<div style={{fontSize: '17px', lineHeight: '30px', alignItems: 'center', textAlign: 'center', color: "#FFFFFF", width: '60%'}} className='mx-auto mt-5'>
 					<span>Please reach out to the link below or text our company line! We would love to partner with others who are as passionate in science as we are! </span>
 				</div>
 				<div className="flex justify-center mx-auto mt-5" style={{display: 'flex', justifyContent: 'center', alignItems: 'center'}}>
