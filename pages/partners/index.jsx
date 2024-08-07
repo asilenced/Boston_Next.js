@@ -28,6 +28,7 @@ function Index() {
         style={{
           backgroundImage: `url(/images/back3.svg)`,
           paddingBottom: '80px',
+        backgroundSize: '5000px auto'
         }}
       >
         <div className="container mx-auto">
@@ -67,23 +68,20 @@ function Index() {
                   src={mark}
                   className="self-start inline w-30"
                   alt="Logo"
-				  style={{width: '500px', height: '500px'}}
                 />
               </div>
               <div className="flex items-center justify-center w-full my-5 md:w-1/3 md:my-0">
                 <Image
                   src={mark2}
                   className="self-start inline my-auto w-30"
-                  style={{ width: '131px', height: '131px' }}
                   alt="Logo"
                 />
               </div>
-              <div className="flex justify-center w-full md:w-1/3">
+              <div className="flex justify-center w-full md:w-1/3 lg:mb-5">
                 <Image
                   src={mark1}
                   className="self-start inline w-30"
                   alt="Logo"
-                  style={{width: '500px', height: '500px'}}
                 />
               </div>
             </div>

@@ -36,6 +36,7 @@ const AppBanner = () => {
       className='bg-local'
       style={{
         backgroundImage: `url(/images/back1.png)`,
+        backgroundSize: '5000px auto'
       }}
     >
       <div className='container mx-auto'>
