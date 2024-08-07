@@ -44,7 +44,7 @@ const MenuModal = ({ showMenu, toggleMenu }) => {
       </div>
 
       <div
-        className={`absolute top-0 left-0 bg-[#051825] w-auto right-0 opacity-90 p-5 shadow-lg rounded-lg ${
+        className={`absolute h-[100%] top-0 left-0 bg-[#051825] w-auto right-0 opacity-90 p-5 shadow-lg rounded-lg ${
           showMenu ? 'block' : 'hidden'
         } xl:hidden`}
       >
