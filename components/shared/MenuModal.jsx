@@ -44,10 +44,9 @@ const MenuModal = ({ showMenu, toggleMenu }) => {
       </div>
 
       <div
-        className={`absolute top-0 left-0 right-0 bg-gray-700 p-5 shadow-lg rounded-lg ${
+        className={`absolute top-0 left-0 bg-[#051825] w-auto right-0 opacity-90 p-5 shadow-lg rounded-lg ${
           showMenu ? 'block' : 'hidden'
         } xl:hidden`}
-        style={{ backgroundColor: 'rgba(55, 65, 81, 0.9)', width: 'auto' }}
       >
         <div className="flex items-center justify-between">
           <Link href="/">
