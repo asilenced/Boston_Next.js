@@ -39,7 +39,7 @@ function index() {
 					<div className='flex justify-center flex-1 mt-5 mb-5'>
 						<span>4+ Projects</span>
 					</div>
-					<div className='flex justify-center flex-1'>
+					<div className='flex justify-center flex-1 mt-5 mb-5'>
 						<span>25+ Innovators</span>
 					</div>
 				</div>
