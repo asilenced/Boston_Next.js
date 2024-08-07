@@ -19,7 +19,7 @@ const Footer = () => {
       <div className="container px-6 mx-auto">
         <div className="flex flex-col justify-between lg:flex-row">
           <div className="flex flex-row flex-wrap lg:flex-col w-full mb-6 lg:w-1/4 basis-[30%]"> {/* mainpart */}
-            <div className="flex items-center w-auto mb-4 mr-10 lg:mr-0">
+            <div className="flex items-center w-1/2 mb-4 lg:mr-0">
               <Image
                 src={logoLight}
                 className="inline w-10"
@@ -31,12 +31,32 @@ const Footer = () => {
                 Boston Innovations<br/>Corporation
               </span>
             </div>
-            <div className="flex items-center space-x-3 w=1/2 lg:w-auto">
-              <a href="https://discord.gg/6Z73xt5fWJ"><Image src={logodiscord} className="inline w-7" alt="Discord" /></a>
-              <a href=""><Image src={logox} className="inline w-7" alt="Twitter" /></a>
-              <a href="https://www.linkedin.com/company/boston-innovations/"><Image src={logolink} className="inline w-7" alt="LinkedIn" /></a>
-              <a href=""><Image src={logoinsta} className="inline w-7" alt="Instagram" /></a>
-              <a href=""><Image src={logoyou} className="inline w-7" alt="YouTube" /></a>
+            <div className="flex flex-row items-center justify-end w-1/2 space-x-3 lg:justify-start">
+              <div className='flex w-[30px]'>
+                <a href="https://discord.gg/6Z73xt5fWJ">
+                  <Image src={logodiscord} className="inline w-[30px]" alt="Discord" />
+                </a>
+              </div>
+              <div className='flex w-[30px]'>
+                <a href="">
+                  <Image src={logox} className="inline w-[30px]" alt="Twitter" />
+                </a>
+              </div>
+              <div className='flex w-[30px]'>
+                <a href="https://www.linkedin.com/company/boston-innovations/">
+                  <Image src={logolink} className="inline w-[30px]" alt="LinkedIn" />
+                </a>
+              </div>
+              <div className='flex w-[30px]'>
+                <a href="">
+                  <Image src={logoinsta} className="inline w-[30px]" alt="Instagram" />
+                </a>
+              </div>
+              <div className='flex w-[30px]'>
+                <a href="">
+                  <Image src={logoyou} className="inline w-[30px]" alt="YouTube" />
+                </a>
+              </div>
             </div>
             <div className='flex'>
               <span
@@ -48,8 +68,8 @@ const Footer = () => {
               </span>
             </div>
           </div>
-          <div className="flex flex-wrap justify-between w-full lg:w-2/4 lg:basis-[40%] lg:grid-cols-4 grid-cols-2" style={{ fontFamily: "Helvetica, Arial, sans-serif" }}>
-            <div className="w-1/2 mb-6 lg:w-1/4">
+          <div className="flex flex-wrap justify-between w-full lg:basis-[40%] md:grid-cols-4 grid-cols-2" style={{ fontFamily: "Helvetica, Arial, sans-serif" }}>
+            <div className="w-1/2 mb-6 md:w-1/4">
               <h3 className="mb-3 text-lg font-semibold" style={{ fontSize: "17px" }}>Overview</h3>
               <ul style={{ fontSize: "14px" }}>
                 <li className='my-5'><LinkButton1 title={"Projects"} footer={"1"} linkname={""} /></li>
@@ -58,7 +78,7 @@ const Footer = () => {
                 <li className='my-5'><LinkButton1 title={"Opportunities"} footer={"1"} linkname={""} /></li>
               </ul>
             </div>
-            <div className="w-1/2 mb-6 lg:w-1/4">
+            <div className="w-1/2 mb-6 md:w-1/4">
               <h3 className="mb-3 text-lg font-semibold" style={{ fontSize: "17px" }}>Company</h3>
               <ul style={{ fontSize: "14px", lineHeight: "20px" }}>
                 <li className='my-5'><LinkButton1 title={"About Us"} footer={"1"} linkname={""} /></li>
@@ -67,7 +87,7 @@ const Footer = () => {
                 <li className='my-5'><LinkButton1 title={"Careers"} footer={"1"} linkname={""} /></li>
               </ul>
             </div>
-            <div className="w-1/2 mb-6 lg:w-1/4">
+            <div className="w-1/2 mb-6 md:w-1/4">
               <h3 className="mb-3 text-lg font-semibold" style={{ fontSize: "17px" }}>Services</h3>
               <ul style={{ fontSize: "14px", lineHeight: "20px" }}>
                 <li className='my-5'><LinkButton1 title={"Our AI Model"} footer={"1"} linkname={""} /></li>
@@ -77,7 +97,7 @@ const Footer = () => {
                 <li className='my-5'><LinkButton1 title={"Returns & Reverse Logistics"} footer={"1"} linkname={""} /></li>
               </ul>
             </div>
-            <div className="w-1/2 mb-6 lg:w-1/4">
+            <div className="w-1/2 mb-6 md:w-1/4">
               <h3 className="mb-3 text-lg font-semibold" style={{ fontSize: "17px" }}>Legal</h3>
               <ul style={{ fontSize: "14px", lineHeight: "20px" }}>
                 <li className='my-5'><LinkButton1 title={"Privacy"} title1={"Policy"} footer={"1"} linkname={""} /></li>

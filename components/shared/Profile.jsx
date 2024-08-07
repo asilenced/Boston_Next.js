@@ -5,7 +5,7 @@ import mailicon from '../../public/images/mailicon.svg';
 
 const Profile = ({image, role, name, des, linkedin, mail}) => {
     return (
-        <div className="flex flex-col mt-10 mb-10 lg:w-[250px] w-full" style={{color: '#FFFFFF'}}>
+        <div className="flex flex-col mt-10 mb-10 lg:w-[1/4] mx-auto " style={{color: '#FFFFFF'}}>
             <div>
                 <Image 
                     src={image}

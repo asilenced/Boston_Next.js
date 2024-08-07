@@ -98,7 +98,7 @@ function Index() {
           // className='-ml-50'
         >
           <div className='container flex flex-col px-5 mx-auto'>
-            <div className='flex flex-row flex-wrap justify-center space-x-5'>
+            <div className='grid justify-center grid-cols-1 gap-5 lg:grid-cols-4 sm:grid-cols-2'>
               <Profile 
                 image={pro1}
                 linkedin={"https://www.linkedin.com/in/nicholas-irving-393787221/"}
