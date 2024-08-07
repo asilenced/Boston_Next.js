@@ -44,12 +44,10 @@ const MenuModal = ({ showMenu, toggleMenu }) => {
       </div>
 
       <div
-        className={
-          showMenu
-            ? 'fixed top-0 left-0 w-full h-full m-0 px-5 py-3 justify-between items-center shadow-lg z-50 xl:hidden'
-            : 'hidden'
-        }
-        style={{ backgroundColor: 'rgba(55, 65, 81, 0.9)' }}
+        className={`absolute top-0 left-0 right-0 bg-gray-700 p-5 shadow-lg rounded-lg ${
+          showMenu ? 'block' : 'hidden'
+        } xl:hidden`}
+        style={{ backgroundColor: 'rgba(55, 65, 81, 0.9)', width: 'auto' }}
       >
         <div className="flex items-center justify-between">
           <Link href="/">
@@ -66,26 +64,20 @@ const MenuModal = ({ showMenu, toggleMenu }) => {
               </span>
             </div>
           </Link>
-          <div className="xl:hidden">
-            <button
-              onClick={toggleMenu}
-              type="button"
-              className="focus:outline-none"
-              aria-label="Hamburger Menu"
+          <button
+            onClick={toggleMenu}
+            type="button"
+            className="focus:outline-none"
+            aria-label="Hamburger Menu"
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 24 24"
+              className="fill-current h-7 w-7 text-secondary-light dark:text-ternary-light"
             >
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                viewBox="0 0 24 24"
-                className="fill-current h-7 w-7 text-secondary-light dark:text-ternary-light"
-              >
-                {showMenu ? (
-                  <FiX className="text-3xl" />
-                ) : (
-                  <FiMenu className="text-3xl" />
-                )}
-              </svg>
-            </button>
-          </div>
+              <FiX className="text-3xl" />
+            </svg>
+          </button>
         </div>
         {['Projects', 'Partners', 'Our Company', 'Opportunities', 'Log In', 'Book Meeting'].map((title, index) => (
           <div
@@ -97,18 +89,11 @@ const MenuModal = ({ showMenu, toggleMenu }) => {
               color: '#FFFFFF',
               lineHeight: '20px',
             }}
-            className={`block pt-3 mb-2 text-lg text-left border-t-2 text-primary-dark dark:text-ternary-light hover:text-secondary-dark dark:hover:text-secondary-light xl:mx-4 xl:py-2 xl:pt-2 xl:border-t-0 border-gray-400 dark:border-secondary-dark ${
-              index === 0 ? 'lg:border-t-0 border-t-0' : ''
+            className={`block pt-3 mb-2 text-lg text-left border-t-2 text-primary-dark dark:text-ternary-light hover:text-secondary-dark dark:hover:text-secondary-light border-gray-400 dark:border-secondary-dark ${
+              index === 0 ? 'border-t-0' : ''
             }`}
           >
-            { 
-              title === 'Projects' ? <Link href={'projects'} aria-label={title}>{title}</Link> : 
-              title === 'Partners' ? <Link href={'partners'} aria-label={title}>{title}</Link> : 
-              title === 'Our Company' ? <Link href={'company'} aria-label={title}>{title}</Link> : 
-              title === 'Opportunities' ? <Link href={'opportunities'} aria-label={title}>{title}</Link> : 
-              title === 'Log In' ? <Link href={''} aria-label={title}>{title}</Link> : 
-              title === 'Book Meeting' ? <Link href={''} aria-label={title}>{title}</Link> : ''
-            }
+            <Link href={`/${title.replace(' ', '').toLowerCase()}`} aria-label={title}>{title}</Link>
           </div>
         ))}
       </div>
