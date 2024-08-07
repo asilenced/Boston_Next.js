@@ -89,7 +89,7 @@ function AppHeader() {
 						"
 						aria-label="Book Meeting Button"
 					>
-						Book Meeting
+						<a href="https://calendly.com/nicholasirving-v_v1/30min">Book Meeting</a>
 					</button>
 				</div>
 			</div>

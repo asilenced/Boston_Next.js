@@ -101,7 +101,7 @@ function index() {
 							duration-300
 							"
 						>
-						<a href='mailto:outreach@bostoninnovations.org' className="text-[25px] leading-[30px] text-white">
+						<a className="text-[25px] leading-[30px] text-white">
 							Info
 						</a>
 						</button>

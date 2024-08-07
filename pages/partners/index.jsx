@@ -18,6 +18,7 @@ import res4 from '../../public/images/res4.svg';
 import res5 from '../../public/images/res5.svg';
 import res6 from '../../public/images/res6.svg';
 import res7 from '../../public/images/res7.svg';
+import OrganizationImages from '../../components/shared/OrginzationImages';
 
 function Index() {
   return (
@@ -27,8 +28,17 @@ function Index() {
         className="bg-local"
         style={{
           backgroundImage: `url(/images/back3.svg)`,
-          paddingBottom: '80px',
+          // paddingBottom: '80px',
         }}
+      >
+        <div
+        className="bg-local"
+        style={{
+          // backgroundImage: `url(/images/back4.png)`,
+          // paddingBottom: '80px',
+          background: `linear-gradient(89.81deg, rgba(2, 24, 35, 0.5) 0.15%, rgba(2, 24, 35, 1) 99.82%)`
+          // background: 'rgba(2, 24, 35, 0.9)'
+        }}      
       >
         <div className="container mx-auto">
           <AppHeader />
@@ -109,7 +119,7 @@ function Index() {
               </div>
             </div>
             <div className="w-full overflow-hidden">
-              <div className="flex items-stretch justify-between mx-auto" style={{ padding: '0 10px' }}>
+              {/* <div className="flex items-stretch justify-between mx-auto" style={{ padding: '0 10px' }}>
                 {[org1, org2, org3, org4, org5, org6].map((src, index) => (
                   <div key={index} className="flex justify-center flex-1 p-2 align-middle">
                     <Image
@@ -118,7 +128,8 @@ function Index() {
                     />
                   </div>
                 ))}
-              </div>
+              </div> */}
+              <OrganizationImages />
             </div>
           </div>
 		  <div className='container mx-auto mt-20'>
@@ -235,15 +246,18 @@ function Index() {
 						hover:bg-[#1E7BA7]
 						transition
 						duration-300
+            sm:mb-15
+            mb-5
 					"
 					>
-            <a href='mailto:outreach@bostoninnovations.org' className="text-[25px] leading-[30px] text-white">
+            <a className="text-[25px] leading-[30px] text-white">
                 Info
             </a>
 					</button>
             </div>
           </div>
         </motion.section>
+        </div>
       </div>
     </>
   );

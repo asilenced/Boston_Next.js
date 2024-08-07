@@ -99,7 +99,7 @@ const MenuModal = ({ showMenu, toggleMenu }) => {
               title === 'Our Company' ? <Link href={'company'} aria-label={title}>{title}</Link> : 
               title === 'Opportunities' ? <Link href={'opportunities'} aria-label={title}>{title}</Link> : 
               title === 'Log In' ? <Link href={''} aria-label={title}>{title}</Link> : 
-              title === 'Book Meeting' ? <Link href={''} aria-label={title}>{title}</Link> : ''
+              title === 'Book Meeting' ? <Link href={'https://calendly.com/nicholasirving-v_v1/30min'} aria-label={title}>{title}</Link> : ''
             }
           </div>
         ))}

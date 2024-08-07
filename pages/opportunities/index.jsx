@@ -37,14 +37,14 @@ function Index() {
             </div>
             <div className="grid grid-cols-1 gap-10 mt-15 lg:grid-cols-2">
                 <Opportunity
-                    open={1}
+                    open={0}
                     titlesize={7}
                     title={"Summer Intern"}
                     des={"As an intern, you'll immerse yourself in a stimulating environment, dedicating 3 hours per week to collaborative projects that revolve around pioneering technologies. Our dynamic projects encompass AI integration, machine learning, and various other groundbreaking initiatives."}
                     months={"2"}
                 />
                 <Opportunity
-                    open={0}
+                    open={1}
                     titlesize={7}
                     title={"Winter Intern"}
                     des={"As an intern, you'll immerse yourself in a stimulating environment, dedicating 3 hours per week to collaborative projects that revolve around pioneering technologies. Our dynamic projects encompass AI integration, machine learning, and various other groundbreaking initiatives."}
