@@ -1,9 +1,5 @@
 import { useState } from 'react';
-import Link from 'next/link';
-import Image from 'next/image';
 import { motion } from 'framer-motion';
-import { FiSun, FiMoon, FiX, FiMenu } from 'react-icons/fi';
-import logoLight from '../../public/images/logo-light.svg';
 import useThemeSwitcher from '../../hooks/useThemeSwitcher';
 import LinkButton from './ButtonLink';
 import MenuModal from './MenuModal';
@@ -23,25 +19,23 @@ function AppHeader() {
 			animate={{ opacity: 1 }}
 			id="nav"
 		>
-			<div className="z-10 block max-w-screen-lg px-10 py-6 xl:max-w-screen-xl lg:flex lg:justify-between lg:items-center">
-				<div className="flex items-center justify-between xl:px-0">
-					<div>
-						<Link href="/">
-						<div className="flex flex-row lg:w-[250px]">
-							<Image
-								src={logoLight}
-								className="inline w-10 cursor-pointer"
-								alt="Logo"
-								width={150}
-								height={120}
-							/>
-							<span className='hidden float-right px-2 font-bold lg:block' style={{color: "#FFFFFF", fontFamily: 'Helvetica, Arial, sans-serif'}} >
-								Boston Innovations<br/>Corporation
-							</span>
-						</div>
-						</Link>
+			<div className="z-10 block px-5 py-6 xl:max-w-screen-xl xl:flex lg:justify-between lg:items-center">
+				{/* <div className="flex items-center justify-between xl:px-0">
+					<Link href="/">
+					<div className="flex flex-row lg:w-[250px]">
+						<Image
+							src={logoLight}
+							className="inline w-10 cursor-pointer"
+							alt="Logo"
+							width={150}
+							height={120}
+						/>
+						<span className='hidden float-right px-2 font-bold sm:block' style={{color: "#FFFFFF", fontFamily: 'Helvetica, Arial, sans-serif'}} >
+							Boston Innovations<br/>Corporation
+						</span>
 					</div>
-					<div className="lg:hidden">
+					</Link>
+					<div className="xl:hidden">
 						<button
 							onClick={toggleMenu}
 							type="button"
@@ -61,17 +55,17 @@ function AppHeader() {
 							</svg>
 						</button>
 					</div>
-				</div>
+				</div> */}
 
-				<MenuModal showMenu={showMenu} />
-				<div className="items-center justify-center hidden p-5 m-0 mt-5 shadow-lg font-general-medium lg:ml-4 lg:mt-3 lg:flex lg:p-0 lg:shadow-none">
-					<LinkButton linkname={"/projects"} title={"Projects"} width={60} />
-					<LinkButton linkname={"/partners"} title={"Partners"} width={60}  />
-					<LinkButton linkname={"/company"} title={"Our Company"} width={140}  />
-					<LinkButton linkname={"/opportunities"} title={"Opportunities"} width={60}  />
+				<MenuModal toggleMenu={toggleMenu} showMenu={showMenu} />
+				<div className="items-center justify-center hidden p-5 m-0 mt-5 shadow-lg font-general-medium lg:ml-4 lg:mt-3 xl:flex lg:p-0 lg:shadow-none">
+					<LinkButton linkname={"/projects"} title={"Projects"} />
+					<LinkButton linkname={"/partners"} title={"Partners"}  />
+					<LinkButton linkname={"/company"} title={"Our Company"}/>
+					<LinkButton linkname={"/opportunities"} title={"Opportunities"}  />
 				</div>
 				
-				<div className='items-center justify-center hidden p-5 m-0 mt-5 shadow-lg font-general-medium lg:ml-4 lg:mt-3 lg:flex lg:p-0 lg:shadow-none'>
+				<div className='items-center justify-center hidden p-5 m-0 mt-5 shadow-lg font-general-medium lg:ml-4 lg:mt-3 xl:flex lg:p-0 lg:shadow-none'>
 					<LinkButton linkname={""} title={"Log In"} width={70}  />
 					<button
 						style={{fontFamily: "Helvetica, Arial, sans-serif"}}

@@ -12,7 +12,7 @@ const Opportunity = ({ open, title, des, months, titlesize }) => {
       </div>
       {
         titlesize == 7 ? <span className={`lg:text-7xl text-2xl leading-tight text-center text-white`}>{title}</span>
-        : <span className={`text-5xl leading-tight text-center text-white`}>{title}</span>
+        : <span className={`lg:text-7xl text-2xl leading-tight text-center text-white`}>{title}</span>
       }
       <span className="text-lg leading-loose text-center text-gray-400 custom-scrollbar" style={{height: '16rem', overflowY: 'auto'}}>
         {des || "As an intern, you'll immerse yourself in a stimulating environment, dedicating 3 hours per week to collaborative projects that revolve around pioneering technologies. Our dynamic projects encompass AI integration, machine learning, and various other groundbreaking initiatives."}
