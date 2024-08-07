@@ -38,7 +38,7 @@ function Index() {
           animate={{ opacity: 1 }}
           transition={{ ease: 'easeInOut', duration: 0.9, delay: 0.2 }}
         >
-          <div className="container mx-auto mt-10">
+          <div className="container px-5 mx-auto mt-10">
             <div className="flex flex-col items-center text-center">
               <span
                 style={{
@@ -138,7 +138,7 @@ function Index() {
 					This list consists of various schools that we have students who contribute to research and innovation at our company!
 				</span>
 			</div>
-			<div className='flex flex-row flex-wrap justify-center mx-auto space-y-5 mt-15'>
+			<div className='flex flex-row flex-wrap justify-center mx-auto space-y-5 md:mt-15'>
 				<div className='flex flex-row flex-wrap justify-center mx-auto space-y-5'>
 					<Image 
 						src={res1}
@@ -175,7 +175,7 @@ function Index() {
 				</div>
 			</div>
 		  </div>
-          <div className="container mx-auto mt-20 text-center">
+          <div className="container mx-auto text-center md:mt-20">
             <div
               style={{
                 fontSize: '45px',

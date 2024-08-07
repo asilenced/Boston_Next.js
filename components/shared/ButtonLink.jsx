@@ -1,6 +1,6 @@
 import Link from 'next/link';
 
-const LinkButton = ({linkname, title, title1, footer}) => {
+const LinkButton = ({linkname, title, title1, footer, width}) => {
     let fontSize = footer === "1" ? "14px" : "17px";
     let fontWeight = footer === "1" ? 400 : 500; // Adjust as needed
 
@@ -14,6 +14,7 @@ const LinkButton = ({linkname, title, title1, footer}) => {
         fontSize: fontSize,
         color: "#FFFFFF",
         lineHeight: "20px",
+        width: `${width}`,
         position: "relative", // Necessary for pseudo-element positioning
       }}
       className={`block mb-2 text-lg font-medium text-left text-primary-dark dark:text-ternary-light hover:text-secondary-dark dark:hover:text-secondary-light ${footer === "1" ? "" : "sm:mx-4 sm:py-2"}`}

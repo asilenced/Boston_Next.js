@@ -32,7 +32,8 @@ function Index() {
         style={{
           // backgroundImage: `url(/images/back4.png)`,
           paddingBottom: '80px',
-          background: `linear-gradient(89.81deg, rgba(2, 24, 35, 0.9) 0.15%, rgba(2, 24, 35, 0.9) 99.82%)`
+          // background: `linear-gradient(0.81deg, rgba(2, 24, 35, 0.9) 99%, rgba(2, 24, 35, 0.9) 99.82%)`
+          background: 'rgba(2, 24, 35, 0.9)'
         }}      
       >
         <div className="container mx-auto">
@@ -44,7 +45,7 @@ function Index() {
           transition={{ ease: 'easeInOut', duration: 0.9, delay: 0.2 }}
           // className='-ml-50'
         >
-          <div className='container mx-auto'>
+          <div className='container px-5 mx-auto'>
             <div className='flex flex-wrap items-center justify-between mx-auto' style={{ color: '#2596BE', fontSize: '45px', lineHeight: '36px', textAlign: 'center', marginTop: '100px' }}>
               <div className='flex justify-center flex-1 mt-5 mb-5'>
                 <span>6+ Founders</span>
@@ -88,7 +89,8 @@ function Index() {
       <div
         className="py-10 bg-local"
         style={{
-          background: `linear-gradient(89.81deg, rgba(2, 24, 35, 0) 0.15%, rgba(2, 24, 35, 0.27) 52.48%, rgba(2, 24, 35, 0.9) 70.92%, rgba(2, 24, 35, 0.9) 99.82%)`
+          background: 'rgba(2, 24, 35, 0.9)'
+          // background: `linear-gradient(89.81deg, rgba(2, 24, 35, 0) 0.15%, rgba(2, 24, 35, 0.27) 52.48%, rgba(2, 24, 35, 0.9) 70.92%, rgba(2, 24, 35, 0.9) 99.82%)`
         }}
       >
         <motion.section
@@ -97,7 +99,7 @@ function Index() {
           transition={{ ease: 'easeInOut', duration: 0.9, delay: 0.2 }}
           // className='-ml-50'
         >
-          <div className='container flex flex-col mx-auto'>
+          <div className='container flex flex-col px-5 mx-auto'>
             <div className='flex flex-row flex-wrap justify-center'>
               <Profile 
                 image={pro1}
@@ -154,13 +156,13 @@ function Index() {
             </div>
           </div>
           <div className='container flex flex-col items-center justify-center mx-auto mt-10'>
-            <div className='flex flex-row flex-wrap justify-center mt-10 space-y-5 md:space-x-10'>
-              <ProfileCard 
+            <div className='flex flex-row flex-wrap justify-center gap-5 mt-10'>
+              <ProfileCard
                 image={member1}
                 name="Dr.James Hillis"
                 des="Doctorate from Oxford in Medicine and Director of Neurological Digital Clinical Research and Artificial Intelligence Organization at Mass General Brigham"
               />
-              <ProfileCard 
+              <ProfileCard
                 image={member2}
                 name="Dr.Doug Rett"
                 des="Chief of Optometry for the VA hospitals in the Greater Boston area with a staff of over a dozen doctors. One of the nation leads for Telemedicine roll-out throughout New England."

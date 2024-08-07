@@ -21,7 +21,7 @@ function Index() {
           animate={{ opacity: 1 }}
           transition={{ ease: 'easeInOut', duration: 0.9, delay: 0.2 }}
         >
-          <div className="container mx-auto mt-10">
+          <div className="container px-5 mx-auto mt-10">
             <div className="flex flex-col items-center text-center">
               <span className="text-6xl font-semibold text-blue-500" style={{color: '#2596BE'}}>Boston Innovations</span>
               <span className="text-6xl font-semibold text-white">Opportunities</span>

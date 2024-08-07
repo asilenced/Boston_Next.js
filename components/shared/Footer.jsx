@@ -46,8 +46,8 @@ const Footer = () => {
               <Image src={hearticon} className="inline w-8" alt="Heart" width="24px" height="24px" />
             </span>
           </div>
-          <div className="flex flex-wrap justify-between w-full lg:w-2/4 basis-[40%]" style={{fontFamily: "Helvetica, Arial, sans-serif"}}>
-            <div className="w-full mb-6 sm:w-1/2 lg:w-1/4">
+          {/* <div className="flex flex-wrap justify-between w-full lg:w-2/4 lg:basis-[40%]" style={{fontFamily: "Helvetica, Arial, sans-serif"}}>
+            <div className="w-1/2 mb-6 lg:w-1/4">
               <h3 className="mb-3 text-lg font-semibold" style={{fontSize: "17px"}}>Overview</h3>
               <ul style={{fontSize: "14px"}}>
                 <li className='my-5'><LinkButton1 title={"Projects"} footer={"1"} linkname={""} /></li>
@@ -56,7 +56,7 @@ const Footer = () => {
                 <li className='my-5'><LinkButton1 title={"Opportunities"} footer={"1"} linkname={""} /></li>
               </ul>
             </div>
-            <div className="w-full mb-6 sm:w-1/2 lg:w-1/4">
+            <div className="w-1/2 mb-6 lg:w-1/4">
               <h3 className="mb-3 text-lg font-semibold" style={{fontSize: "17px"}}>Company</h3>
               <ul style={{fontSize: "14px", lineHeight: "20px"}}>
                 <li className='my-5'><LinkButton1 title={"About Us"} footer={"1"} linkname={""} /></li>
@@ -65,7 +65,7 @@ const Footer = () => {
                 <li className='my-5'><LinkButton1 title={"Careers"} footer={"1"} linkname={""} /></li>
               </ul>
             </div>
-            <div className="w-full mb-6 sm:w-1/2 lg:w-1/4">
+            <div className="w-1/2 mb-6 lg:w-1/4">
               <h3 className="mb-3 text-lg font-semibold" style={{fontSize: "17px"}}>Services</h3>
               <ul style={{fontSize: "14px", lineHeight: "20px"}}>
                 <li className='my-5'><LinkButton1 title={"Our AI Model"} footer={"1"} linkname={""} /></li>
@@ -75,7 +75,7 @@ const Footer = () => {
                 <li className='my-5'><LinkButton1 title={"Returns & Reverse Logistics"} footer={"1"} linkname={""} /></li>
               </ul>
             </div>
-            <div className="w-full mb-6 sm:w-1/2 lg:w-1/4">
+            <div className="w-1/2 mb-6 lg:w-1/4">
               <h3 className="mb-3 text-lg font-semibold" style={{fontSize: "17px"}}>Legal</h3>
               <ul style={{fontSize: "14px", lineHeight: "20px"}}>
                 <li className='my-5'><LinkButton1 title={"Privacy"} title1={"Policy"} footer={"1"} linkname={""} /></li>
@@ -83,7 +83,46 @@ const Footer = () => {
                 <li className='my-5'><LinkButton1 title={"Help"} footer={"1"} linkname={""} /></li>
               </ul>
             </div>
-          </div>
+          </div> */}
+          <div className="flex flex-wrap justify-between w-full lg:w-2/4 lg:basis-[40%]" style={{ fontFamily: "Helvetica, Arial, sans-serif" }}>
+  <div className="w-full mb-6 sm:w-1/2 lg:w-1/4">
+    <h3 className="mb-3 text-lg font-semibold" style={{ fontSize: "17px" }}>Overview</h3>
+    <ul style={{ fontSize: "14px" }}>
+      <li className='my-5'><LinkButton1 title={"Projects"} footer={"1"} linkname={""} /></li>
+      <li className='my-5'><LinkButton1 title={"Partner"} footer={"1"} linkname={""} /></li>
+      <li className='my-5'><LinkButton1 title={"Our Company"} footer={"1"} linkname={""} /></li>
+      <li className='my-5'><LinkButton1 title={"Opportunities"} footer={"1"} linkname={""} /></li>
+    </ul>
+  </div>
+  <div className="w-full mb-6 sm:w-1/2 lg:w-1/4">
+    <h3 className="mb-3 text-lg font-semibold" style={{ fontSize: "17px" }}>Company</h3>
+    <ul style={{ fontSize: "14px", lineHeight: "20px" }}>
+      <li className='my-5'><LinkButton1 title={"About Us"} footer={"1"} linkname={""} /></li>
+      <li className='my-5'><LinkButton1 title={"Blogs"} footer={"1"} linkname={""} /></li>
+      <li className='my-5'><LinkButton1 title={"Testimonials"} footer={"1"} linkname={""} /></li>
+      <li className='my-5'><LinkButton1 title={"Careers"} footer={"1"} linkname={""} /></li>
+    </ul>
+  </div>
+  <div className="w-full mb-6 sm:w-1/2 lg:w-1/4">
+    <h3 className="mb-3 text-lg font-semibold" style={{ fontSize: "17px" }}>Services</h3>
+    <ul style={{ fontSize: "14px", lineHeight: "20px" }}>
+      <li className='my-5'><LinkButton1 title={"Our AI Model"} footer={"1"} linkname={""} /></li>
+      <li className='my-5'><LinkButton1 title={"3PL Fulfillment"} footer={"1"} linkname={""} /></li>
+      <li className='my-5'><LinkButton1 title={"Freight & Shipping"} footer={"1"} linkname={""} /></li>
+      <li className='my-5'><LinkButton1 title={"Custom Packaging"} footer={"1"} linkname={""} /></li>
+      <li className='my-5'><LinkButton1 title={"Returns & Reverse Logistics"} footer={"1"} linkname={""} /></li>
+    </ul>
+  </div>
+  <div className="w-full mb-6 sm:w-1/2 lg:w-1/4">
+    <h3 className="mb-3 text-lg font-semibold" style={{ fontSize: "17px" }}>Legal</h3>
+    <ul style={{ fontSize: "14px", lineHeight: "20px" }}>
+      <li className='my-5'><LinkButton1 title={"Privacy"} title1={"Policy"} footer={"1"} linkname={""} /></li>
+      <li className='my-5'><LinkButton1 title={"Terms &"} title1={"Conditions"} footer={"1"} linkname={""} /></li>
+      <li className='my-5'><LinkButton1 title={"Help"} footer={"1"} linkname={""} /></li>
+    </ul>
+  </div>
+</div>
+
           <div className="w-full mb-6 sm:w-1/2 lg:w-1/4 basis-[25%] lg:ml-auto" style={{fontSize: "17px", fontFamily: "Helvetica, Arial, sans-serif"}}>
             <h3 className="mb-3 text-lg font-semibold">Contact Info</h3>
             <ul style={{fontSize: "14px"}}>

@@ -40,13 +40,15 @@ const AppBanner = () => {
     >
       <div className='container mx-auto'>
         <AppHeader />
+      </div>
+      <div className='container mx-auto'>
         <motion.section
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ ease: 'easeInOut', duration: 0.9, delay: 0.2 }}
-          className="flex flex-col items-center mt-20 sm:justify-between sm:flex-row"
+          className="flex flex-col items-center lg:mt-20 sm:justify-between lg:flex-row"
         >
-          <div className="w-full text-left md:w-3/5">
+          <div className="w-full pl-15 lg:w-3/5">
             <span
               style={{
                 fontFamily: 'Helvetica, Arial, sans-serif',
@@ -61,7 +63,7 @@ const AppBanner = () => {
             >
               We Help Create
             </span>
-			<div className='h-[160px] lg:h-[110px]'>
+			<div className='h-[110px] md:h-[130px] lg:h-[100px]'>
 				<motion.span
 					style={{
 						fontFamily: 'Helvetica, Arial, sans-serif',
@@ -87,6 +89,7 @@ const AppBanner = () => {
                 display: 'flex',
                 alignItems: 'center',
                 color: '#F8F8F8',
+                width: '90%'
               }}
               className='my-5'
             >
@@ -140,6 +143,7 @@ const AppBanner = () => {
 							Learn More
 						</button>
             <span
+              className='lg:mb-[150px] mb-10'
               style={{
                 fontFamily: 'Helvetica, Arial, sans-serif',
                 fontWeight: '275',
@@ -147,14 +151,13 @@ const AppBanner = () => {
                 lineHeight: '150%',
                 display: 'flex',
                 alignItems: 'center',
-                marginBottom: '150px',
                 color: '#FFFFFF',
               }}
             >
               2024 MIT & Harvard Biotech<br />Group scholarship winner
             </span>
           </div>
-          <div className="self-start mx-auto mb-20 sm:mt-0 sm:mb-0">
+          <div className="self-start mx-auto mt-0 mb-10 lg:mb-0">
             <Image
               src={markLogo}
               className="self-start inline w-30"

@@ -1,7 +1,6 @@
 import Image from "next/image";
 
 const Opportunity = ({ open, title, des, months, titlesize }) => {
-  console.log(titlesize)
   return (
     <div className="flex flex-col space-y-8 text-white bg-gray-900 md:w-3/7 p-11 bg-opacity-40 rounded-2xl">
       <div

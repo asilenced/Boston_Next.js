@@ -23,9 +23,10 @@ function AppHeader() {
 			id="nav"
 		>
 			<div className="z-10 block max-w-screen-lg px-10 py-6 xl:max-w-screen-xl lg:flex lg:justify-between lg:items-center">
-				<div className="flex items-center justify-between px-4 lg:px-0">
+				<div className="flex items-center justify-between xl:px-0">
 					<div>
 						<Link href="/">
+						<div className="flex flex-row" style={{width: '250px'}}>
 							<Image
 								src={logoLight}
 								className="inline w-10 cursor-pointer"
@@ -36,6 +37,7 @@ function AppHeader() {
 							<span className='hidden float-right px-2 font-bold lg:block' style={{color: "#FFFFFF", fontFamily: 'Helvetica, Arial, sans-serif'}} >
 								Boston Innovations<br/>Corporation
 							</span>
+						</div>
 						</Link>
 					</div>
 					<div className="lg:hidden">
@@ -102,7 +104,14 @@ function AppHeader() {
 							Log In
 						</Link>
 					</div>
-					<div className="pt-3 border-t-0 lg:pt-0 lg:border-t-0 border-primary-light dark:border-secondary-dark">
+					<div 
+						style={{fontFamily: "Helvetica, Arial, sans-serif", fontWeight: 500, fontSize: "17px", color: "#FFFFFF", lineHeight: "20px"}}
+						className="block pt-3 mb-2 text-lg text-left border-t-2 text-primary-dark dark:text-ternary-light hover:text-secondary-dark dark:hover:text-secondary-light lg:mx-4 lg:py-2 lg:pt-2 lg:border-t-0 border-primary-light dark:border-secondary-dark">
+						<Link href="" aria-label="login">
+							Book Meeting
+						</Link>
+					</div>
+					{/* <div className="pt-3 border-t-0 lg:pt-0 lg:border-t-0 border-primary-light dark:border-secondary-dark">
 						<button
 							style={{fontFamily: "Helvetica, Arial, sans-serif",
 									fontWeight: 500,
@@ -124,18 +133,18 @@ function AppHeader() {
 						>
 							Book Meeting
 						</button>
-					</div>
+					</div> */}
 				</div>
 
 				<div className="items-center justify-center hidden p-5 m-0 mt-5 shadow-lg font-general-medium lg:ml-4 lg:mt-3 lg:flex lg:p-0 lg:shadow-none">
-					<LinkButton linkname={"/projects"} title={"Projects"} />
-					<LinkButton linkname={"/partners"} title={"Partners"} />
-					<LinkButton linkname={"/company"} title={"Our Company"} />
-					<LinkButton linkname={"/opportunities"} title={"Opportunities"} />
+					<LinkButton linkname={"/projects"} title={"Projects"} width={60} />
+					<LinkButton linkname={"/partners"} title={"Partners"} width={60}  />
+					<LinkButton linkname={"/company"} title={"Our Company"} width={140}  />
+					<LinkButton linkname={"/opportunities"} title={"Opportunities"} width={60}  />
 				</div>
 				
 				<div className='items-center justify-center hidden p-5 m-0 mt-5 shadow-lg font-general-medium lg:ml-4 lg:mt-3 lg:flex lg:p-0 lg:shadow-none'>
-					<LinkButton linkname={""} title={"Log In"} />
+					<LinkButton linkname={""} title={"Log In"} width={70}  />
 					<button
 						style={{fontFamily: "Helvetica, Arial, sans-serif"}}
 						className="

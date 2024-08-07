@@ -30,12 +30,12 @@ function index() {
             transition={{ ease: 'easeInOut', duration: 0.9, delay: 0.2 }}
 			// className='-ml-10'
           >
-			<div className='container mx-auto'>
+			<div className='container px-5 mx-auto'>
 				{/* <AppHeader /> */}
 				<MainPoint type={"video"} videosrc={"/whycreate.mp4"} title={"Why Create"} subTitle={"Projects And Innovations?"} des1={"At Boston Innovations, we take innovation so seriously, it's literally in our name. Every individual harbors an intrinsic urge to create, innovate, and change the world around them. At Boston Innovations, we recognize and harness this universal drive, channeling it into the the development of advanced medical devices, cutting-edge pharmaceuticals, and comprehensive artificial intelligence healthcare systems."}/>
 			</div>
 			<div style={{ background: 'rgba(2, 23, 35, 0.8)', marginTop: '50px', width: '100%', position: 'relative', left: '50%', right: '50%', marginLeft: '-50vw', marginRight: '-50vw' }}>
-				<div className='container flex items-center justify-between mx-auto' style={{ color: '#2596BE', fontSize: '45px', lineHeight: '36px', textAlign: 'center' }}>
+				<div className='container flex flex-wrap items-center justify-between mx-auto' style={{ color: '#2596BE', fontSize: '45px', lineHeight: '36px', textAlign: 'center' }}>
 					<div className='flex justify-center flex-1 mt-5 mb-5'>
 						<span>4+ Projects</span>
 					</div>
