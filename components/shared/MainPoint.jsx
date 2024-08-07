@@ -3,7 +3,7 @@ import Image from 'next/image';
 const MainPoint = ({title, subTitle, image, des1, des2, videosrc, type}) => {
     return (
         <div>
-            <div className="flex flex-col items-center mt-20 gap-x-5 lg:justify-between lg:flex-row">
+            <div className="flex flex-col items-center lg:mt-20 gap-x-5 lg:justify-between lg:flex-row">
                 <div className="w-full mx-auto text-left align-middle lg:w-1/2">
                     <span
                     style={{

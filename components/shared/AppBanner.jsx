@@ -48,7 +48,7 @@ const AppBanner = () => {
           transition={{ ease: 'easeInOut', duration: 0.9, delay: 0.2 }}
           className="flex flex-col items-center lg:mt-20 sm:justify-between lg:flex-row"
         >
-          <div className="w-full pl-15 lg:w-3/5">
+          <div className="w-full lg:pl-15 lg:w-3/5">
             <span
               style={{
                 fontFamily: 'Helvetica, Arial, sans-serif',
