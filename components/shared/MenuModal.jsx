@@ -8,7 +8,7 @@ const MenuModal = ({ showMenu }) => {
           ? 'block m-0 lg:ml-4 mt-3 lg:hidden px-5 py-3 lg:p-0 justify-between items-center shadow-lg lg:shadow-none rounded-lg'
           : 'hidden'
       }
-      style={{ backgroundColor: 'rgba(55, 65, 81, 0.8)' }}
+      style={{ backgroundColor: 'rgba(55, 65, 81, 0.4)' }}
     >
       {['Projects', 'Partners', 'Our Company', 'Opportunities', 'Log In', 'Book Meeting'].map((title, index) => (
         <div
