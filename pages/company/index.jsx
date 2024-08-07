@@ -23,7 +23,6 @@ function Index() {
         className="bg-local"
         style={{
           backgroundImage: `url(/images/back4.png)`,
-          backgroundSize: '5000px auto'
           // paddingBottom: '80px',
           // background: `linear-gradient(89.81deg, rgba(2, 24, 35, 0) 0.15%, rgba(2, 24, 35, 0.27) 52.48%, rgba(2, 24, 35, 0.9) 70.92%, rgba(2, 24, 35, 0.9) 99.82%)`
         }}

@@ -14,7 +14,7 @@ const ProjectItem = ({ title, description, description1, image }) => {
       <div className="flex flex-col p-6 md:w-1/2">
         <div className='my-auto'>
             <div>
-                <h3 className="mb-5" style={{fontSize: '30px', lineHeight: '50px', alignItems: 'center', color: '#F8F8F8'}}>{title}</h3>
+                <h3 className="mb-5 text-2xl lg:text-3xl" style={{alignItems: 'center', color: '#F8F8F8'}}>{title}</h3>
                 <p className="mb-5" style={{fontSize: '17px', lineHeight: '26px', color: '#F8F8F8'}}>{description}</p>
                 <p className="mb-5" style={{fontSize: '17px', lineHeight: '26px', color: '#F8F8F8'}}>{description1}</p>
             </div>

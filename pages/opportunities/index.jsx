@@ -11,8 +11,7 @@ function Index() {
       <PagesMetaHead title="Projects" />
       <div
         className="bg-local bg-cover"
-        style={{ backgroundImage: `url(/images/back5.svg)`, paddingBottom: '40px', 
-          backgroundSize: '5000px auto' }}
+        style={{ backgroundImage: `url(/images/back5.svg)`, paddingBottom: '40px' }}
       >
         <div className="container mx-auto">
           <AppHeader />

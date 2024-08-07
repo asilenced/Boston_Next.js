@@ -18,7 +18,6 @@ function index() {
         style={{
           backgroundImage: `url(/images/back2.png)`,
 		  paddingBottom: '80px',
-        backgroundSize: '5000px auto'
         }}
       >
 		<div className='container mx-auto'>
