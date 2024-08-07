@@ -41,9 +41,8 @@ function Index() {
           <div className="container px-5 mx-auto mt-10">
             <div className="flex flex-col items-center text-center">
               <span
+                className='text-2xl lg:text-6xl'
                 style={{
-                  fontSize: '54px',
-                  lineHeight: '68px',
                   textTransform: 'capitalize',
                   fontWeight: '600',
                   color: '#2596BE',
@@ -52,9 +51,8 @@ function Index() {
                 Boston Innovations
               </span>
               <span
+                className='text-2xl lg:text-6xl'
                 style={{
-                  fontSize: '54px',
-                  lineHeight: '68px',
                   textTransform: 'capitalize',
                   fontWeight: '600',
                   color: '#FFFFFF',
@@ -106,7 +104,7 @@ function Index() {
                 textAlign: 'center',
               }}
             >
-              <div className="flex flex-wrap justify-center flex-1 mt-5 mb-5">
+              <div className="flex flex-wrap justify-center flex-1 mt-5 mb-5 text-2xl lg:text-6xl">
                 <span style={{ color: '#2596BE' }}>Sponsored&nbsp;</span>
                 <span>&&nbsp;</span>
                 <span style={{ color: '#2596BE' }}>Related&nbsp;</span>
@@ -127,7 +125,7 @@ function Index() {
             </div>
           </div>
 		  <div className='container mx-auto mt-20'>
-			<div className='flex flex-col justify-center mx-auto md:w-1/2' style={{fontSize: '45px', lineHeight: '60px', color:'#FFFFFF', flexDirection: 'col', alignItems: 'center', textAlign: 'center'}}>
+			<div className='flex flex-col justify-center mx-auto text-2xl md:w-1/2 lg:text-5xl' style={{color:'#FFFFFF', flexDirection: 'col', alignItems: 'center', textAlign: 'center'}}>
 				<span>
 					Colleges with involved
 				</span>
@@ -178,12 +176,11 @@ function Index() {
           <div className="container mx-auto text-center md:mt-20">
             <div
               style={{
-                fontSize: '45px',
-                lineHeight: '50px',
                 alignItems: 'center',
                 color: '#FFFFFF',
                 flexDirection: 'row',
               }}
+              className='text-2xl lg:text-5xl'
             >
               <span>Want to </span>
               <span style={{ color: '#2596BE' }}>partner </span>
@@ -230,11 +227,11 @@ function Index() {
                 </span>
               </button> */}
               
-					<a href='mailto:outreach@bostoninnovations.org'>
           <button
 					className="
-						px-[111px]
-						py-[15px]
+						w-[50%]
+            lg:w-[200px]
+            py-2
 						bg-[#2596BE]
 						rounded-[15px]
 						justify-items-center
@@ -243,11 +240,10 @@ function Index() {
 						duration-300
 					"
 					>
-					<span className="text-[25px] leading-[30px] text-white">
-						Info
-					</span>
+					<span href='mailto:outreach@bostoninnovations.org' className="text-[25px] leading-[30px] text-white">
+							Info
+						</span>
 					</button>
-          </a>
             </div>
           </div>
         </motion.section>

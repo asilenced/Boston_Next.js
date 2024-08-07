@@ -18,11 +18,11 @@ const Opportunity = ({ open, title, des, months, titlesize }) => {
         {des || "As an intern, you'll immerse yourself in a stimulating environment, dedicating 3 hours per week to collaborative projects that revolve around pioneering technologies. Our dynamic projects encompass AI integration, machine learning, and various other groundbreaking initiatives."}
       </span>
 
-      <div className="flex flex-wrap text-2xl text-white lg:flex-row">
-        <div className="flex flex-col justify-center w-1/2 text-center">
+      <div className="flex flex-row text-2xl te xt-white">
+        <div className="flex justify-center w-1/2 text-center">
           <span>{months}+ Months</span>
         </div>
-        <div className="flex flex-col justify-center w-1/2 text-center">
+        <div className="flex justify-center w-1/2 text-center">
           <span>Virtual Options</span>
         </div>
       </div>

@@ -73,7 +73,7 @@ function index() {
 				/>
 			</div>
 			<div className='container mx-auto mt-20'>
-				<div style={{fontSize: '45px', lineHeight: '50px', alignItems: 'center', textAlign: 'center', color: '#FFFFFF', flexDirection: 'row'}}>
+				<div style={{alignItems: 'center', textAlign: 'center', color: '#FFFFFF', flexDirection: 'row'}} className='text-2xl lg:text-5xl'>
 					<span>Want to </span>
 					<span style={{color: '#2596BE'}}>invest </span>
 					<span>into our projects?</span>
