@@ -47,7 +47,7 @@ function index() {
 			<div className='container mx-auto mt-10'>
 				<div className='flex-row justify-center text-center'>
 					<span className='text-2xl lg:text-6xl' style={{textTransform: 'capitalize', alignItems: 'center', fontWeight: '600', color: '#2596BE'}}>Our Current</span><br />
-					<span style={{textTransform: 'capitalize', alignItems: 'center', fontWeight: '600', color: '#FFFFFF'}}>Projects</span>
+					<span className='text-2xl lg:text-6xl' style={{textTransform: 'capitalize', alignItems: 'center', fontWeight: '600', color: '#FFFFFF'}}>Projects</span>
 				</div>
 				<ProjectItem
 					image={project1}

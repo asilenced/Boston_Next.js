@@ -26,7 +26,7 @@ function AppHeader() {
 				<div className="flex items-center justify-between xl:px-0">
 					<div>
 						<Link href="/">
-						<div className="flex flex-row" style={{width: '250px'}}>
+						<div className="flex flex-row lg:w-[250px]">
 							<Image
 								src={logoLight}
 								className="inline w-10 cursor-pointer"
