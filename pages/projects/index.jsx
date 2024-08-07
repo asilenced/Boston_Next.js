@@ -102,9 +102,9 @@ function index() {
 							duration-300
 							"
 						>
-						<span href='mailto:outreach@bostoninnovations.org' className="text-[25px] leading-[30px] text-white">
+						<a href='mailto:outreach@bostoninnovations.org' className="text-[25px] leading-[30px] text-white">
 							Info
-						</span>
+						</a>
 						</button>
 					{/* </a> */}
 				</div>
