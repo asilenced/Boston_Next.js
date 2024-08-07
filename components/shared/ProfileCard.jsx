@@ -17,7 +17,7 @@ const ProfileCard = ({image, name, des }) => {
                 src={markstart}
                 style={{width: '37px', height: 'auto', marginTop: '25px'}}
             />
-            <span className='custom-scrollbar' style={{fontSize: '17px', lineHeight: '40px', height: '16rem', overflowY: 'auto', color: '#E5E5E5', fontStyle: 'italic', marginTop: '25px', alignSelf: 'center'}}>
+            <span className='custom-scrollbar' style={{fontSize: '17px', lineHeight: '40px', height: '12rem', overflowY: 'auto', color: '#E5E5E5', fontStyle: 'italic', marginTop: '25px', alignSelf: 'center'}}>
                 {des}
             </span>
             <Image

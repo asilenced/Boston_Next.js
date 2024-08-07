@@ -2,7 +2,7 @@ import Image from "next/image";
 
 const Opportunity = ({ open, title, des, months, titlesize }) => {
   return (
-    <div className="flex flex-col space-y-8 md:p-[44px] p-[20px] text-white bg-gray-900 md:w-3/7 p-11 bg-opacity-40 rounded-2xl">
+    <div className="flex flex-col space-y-8 md:p-[44px] p-[20px] text-white bg-[#333333] md:w-3/7 bg-opacity-40 rounded-2xl">
       <div
         className={`flex self-center justify-center px-2 py-2 rounded-lg text-lg ${
           open === 1 ? 'bg-green-800' : 'bg-red-800 bg-opacity-90'
@@ -12,7 +12,7 @@ const Opportunity = ({ open, title, des, months, titlesize }) => {
       </div>
       {
         titlesize == 7 ? <span className={`lg:text-7xl text-2xl leading-tight text-center text-white`}>{title}</span>
-        : <span className={`lg:text-7xl text-2xl leading-tight text-center text-white`}>{title}</span>
+        : <span className={`lg:text-6xl text-2xl leading-tight text-center text-white`}>{title}</span>
       }
       <span className="text-lg leading-loose text-center text-gray-400 custom-scrollbar" style={{height: '16rem', overflowY: 'auto'}}>
         {des || "As an intern, you'll immerse yourself in a stimulating environment, dedicating 3 hours per week to collaborative projects that revolve around pioneering technologies. Our dynamic projects encompass AI integration, machine learning, and various other groundbreaking initiatives."}
