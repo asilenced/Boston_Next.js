@@ -87,9 +87,8 @@ const AppBanner = () => {
                 display: 'flex',
                 alignItems: 'center',
                 color: '#F8F8F8',
-                width: '90%'
               }}
-              className='my-5'
+              className='my-5 w-full lg:w-[90%]'
             >
               Founded by a group of ambitious Boston area engineering students and faculty, Boston Innovations Corporation stands at the forefront of biomedical technology and innovation.
             </span>

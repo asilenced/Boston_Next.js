@@ -6,6 +6,7 @@ import { FiSun, FiMoon, FiX, FiMenu } from 'react-icons/fi';
 import logoLight from '../../public/images/logo-light.svg';
 import useThemeSwitcher from '../../hooks/useThemeSwitcher';
 import LinkButton from './ButtonLink';
+import MenuModal from './MenuModal';
 
 function AppHeader() {
 	const [showMenu, setShowMenu] = useState(false);
@@ -62,80 +63,7 @@ function AppHeader() {
 					</div>
 				</div>
 
-				<div
-					className={
-						showMenu
-							? 'block m-0 lg:ml-4 lg:mt-3 lg:hidden px-5 py-3 lg:p-0 justify-between items-center shadow-lg lg:shadow-none'
-							: 'hidden'
-					}
-				>
-					<div 
-						style={{fontFamily: "Helvetica, Arial, sans-serif", fontWeight: 500, fontSize: "17px", color: "#FFFFFF", lineHeight: "20px"}}
-						className="block mb-2 text-lg font-medium text-left text-primary-dark dark:text-ternary-light hover:text-secondary-dark dark:hover:text-secondary-light lg:mx-4 lg:py-2">
-						<Link href="/projects" aria-label="Projects">
-							Projects
-						</Link>
-					</div>
-					<div 
-						style={{fontFamily: "Helvetica, Arial, sans-serif", fontWeight: 500, fontSize: "17px", color: "#FFFFFF", lineHeight: "20px"}}
-						className="block pt-3 mb-2 text-lg text-left border-t-2 text-primary-dark dark:text-ternary-light hover:text-secondary-dark dark:hover:text-secondary-light lg:mx-4 lg:py-2 lg:pt-2 lg:border-t-0 border-primary-light dark:border-secondary-dark">
-						<Link href="/partners" aria-label="Partners">
-							Partners
-						</Link>
-					</div>
-					<div 
-						style={{fontFamily: "Helvetica, Arial, sans-serif", fontWeight: 500, fontSize: "17px", color: "#FFFFFF", lineHeight: "20px"}}
-						className="block pt-3 mb-2 text-lg text-left border-t-2 text-primary-dark dark:text-ternary-light hover:text-secondary-dark dark:hover:text-secondary-light lg:mx-4 lg:py-2 lg:pt-2 lg:border-t-0 border-primary-light dark:border-secondary-dark">
-						<Link href="/company" aria-label="Our Company">
-							Our Company
-						</Link>
-					</div>
-					<div 
-						style={{fontFamily: "Helvetica, Arial, sans-serif", fontWeight: 500, fontSize: "17px", color: "#FFFFFF", lineHeight: "20px"}}
-						className="block pt-3 mb-2 text-lg text-left border-t-2 text-primary-dark dark:text-ternary-light hover:text-secondary-dark dark:hover:text-secondary-light lg:mx-4 lg:py-2 lg:pt-2 lg:border-t-0 border-primary-light dark:border-secondary-dark">
-						<Link href="/opportunities" aria-label="Opportunities">
-							Opportunities
-						</Link>
-					</div>
-					<div 
-						style={{fontFamily: "Helvetica, Arial, sans-serif", fontWeight: 500, fontSize: "17px", color: "#FFFFFF", lineHeight: "20px"}}
-						className="block pt-3 mb-2 text-lg text-left border-t-2 text-primary-dark dark:text-ternary-light hover:text-secondary-dark dark:hover:text-secondary-light lg:mx-4 lg:py-2 lg:pt-2 lg:border-t-0 border-primary-light dark:border-secondary-dark">
-						<Link href="" aria-label="login">
-							Log In
-						</Link>
-					</div>
-					<div 
-						style={{fontFamily: "Helvetica, Arial, sans-serif", fontWeight: 500, fontSize: "17px", color: "#FFFFFF", lineHeight: "20px"}}
-						className="block pt-3 mb-2 text-lg text-left border-t-2 text-primary-dark dark:text-ternary-light hover:text-secondary-dark dark:hover:text-secondary-light lg:mx-4 lg:py-2 lg:pt-2 lg:border-t-0 border-primary-light dark:border-secondary-dark">
-						<Link href="" aria-label="login">
-							Book Meeting
-						</Link>
-					</div>
-					{/* <div className="pt-3 border-t-0 lg:pt-0 lg:border-t-0 border-primary-light dark:border-secondary-dark">
-						<button
-							style={{fontFamily: "Helvetica, Arial, sans-serif",
-									fontWeight: 500,
-									fontSize: "17px",
-									color: "#F8F8F8",
-									lineHeight: "20px",
-									display: "flex",
-									background: "#2596BE",
-									justifyContent: "center",
-									alignItems: "center",
-									borderRadius: "20px",
-									border: "1px solid #2596BE",
-									padding: "16px 41px",
-									gap: "10px",
-									width: "auto",
-							}}
-							className="block w-24 px-4 py-2 text-left text-white duration-300 rounded-sm shadow-sm font-general-medium lg:hidden text-md"
-							aria-label="Book Meeting Button"
-						>
-							Book Meeting
-						</button>
-					</div> */}
-				</div>
-
+				<MenuModal showMenu={showMenu} />
 				<div className="items-center justify-center hidden p-5 m-0 mt-5 shadow-lg font-general-medium lg:ml-4 lg:mt-3 lg:flex lg:p-0 lg:shadow-none">
 					<LinkButton linkname={"/projects"} title={"Projects"} width={60} />
 					<LinkButton linkname={"/partners"} title={"Partners"} width={60}  />
