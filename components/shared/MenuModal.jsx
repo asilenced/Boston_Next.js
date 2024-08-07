@@ -44,9 +44,10 @@ const MenuModal = ({ showMenu, toggleMenu }) => {
       </div>
 
       <div
-        className={`absolute h-[100%] top-0 left-0 bg-[#051825] w-auto right-0 opacity-90 p-5 shadow-lg rounded-lg ${
+        className={`absolute h-[100%] top-0 left-0 bg-[#061927] w-auto right-0 opacity-95 p-5 shadow-lg rounded-lg ${
           showMenu ? 'block' : 'hidden'
         } xl:hidden`}
+         style = {{ boxShadow: "0 2px 4px #00000080"}}
       >
         <div className="flex items-center justify-between">
           <Link href="/">
@@ -92,7 +93,14 @@ const MenuModal = ({ showMenu, toggleMenu }) => {
               index === 0 ? 'border-t-0' : ''
             }`}
           >
-            <Link href={`/${title.replace(' ', '').toLowerCase()}`} aria-label={title}>{title}</Link>
+             { 
+              title === 'Projects' ? <Link href={'projects'} aria-label={title}>{title}</Link> : 
+              title === 'Partners' ? <Link href={'partners'} aria-label={title}>{title}</Link> : 
+              title === 'Our Company' ? <Link href={'company'} aria-label={title}>{title}</Link> : 
+              title === 'Opportunities' ? <Link href={'opportunities'} aria-label={title}>{title}</Link> : 
+              title === 'Log In' ? <Link href={''} aria-label={title}>{title}</Link> : 
+              title === 'Book Meeting' ? <Link href={''} aria-label={title}>{title}</Link> : ''
+            }
           </div>
         ))}
       </div>
