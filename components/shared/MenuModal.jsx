@@ -5,7 +5,7 @@ const MenuModal = ({ showMenu }) => {
     <div
       className={
         showMenu
-          ? 'block m-0 lg:ml-4 lg:mt-3 lg:hidden mt-3 px-5 py-3 lg:p-0 justify-between items-center shadow-lg lg:shadow-none rounded-lg'
+          ? 'block m-0 lg:ml-4 mt-3 lg:hidden px-5 py-3 lg:p-0 justify-between items-center shadow-lg lg:shadow-none rounded-lg'
           : 'hidden'
       }
       style={{ backgroundColor: 'rgba(55, 65, 81, 0.8)' }}
@@ -20,7 +20,7 @@ const MenuModal = ({ showMenu }) => {
             color: '#FFFFFF',
             lineHeight: '20px',
           }}
-          className={`block pt-3 mb-2 text-lg text-left border-t-2 text-primary-dark dark:text-ternary-light hover:text-secondary-dark dark:hover:text-secondary-light lg:mx-4 lg:py-2 lg:pt-2 lg:border-t-0 border-primary-light dark:border-secondary-dark ${
+          className={`block pt-3 mb-2 text-lg text-left border-t-2 text-primary-dark dark:text-ternary-light hover:text-secondary-dark dark:hover:text-secondary-light lg:mx-4 lg:py-2 lg:pt-2 lg:border-t-0 border-gray-400 dark:border-secondary-dark ${
             index === 0 ? 'lg:border-t-0 border-t-0' : ''
           }`}
         >
