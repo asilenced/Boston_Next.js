@@ -53,33 +53,31 @@ const AppBanner = () => {
               style={{
                 fontFamily: 'Helvetica, Arial, sans-serif',
                 fontWeight: 600,
-                fontSize: '54px',
-                lineHeight: '68px',
                 display: 'flex',
                 alignItems: 'center',
                 textTransform: 'capitalize',
                 color: '#2596BE',
               }}
+              className='text-2xl lg:text-6xl'
             >
               We Help Create
             </span>
-			<div className='h-[110px] md:h-[130px] lg:h-[100px]'>
-				<motion.span
-					style={{
-						fontFamily: 'Helvetica, Arial, sans-serif',
-						fontWeight: 600,
-						fontSize: '54px',
-						lineHeight: '68px',
-						display: 'flex',
-						alignItems: 'center',
-						textTransform: 'capitalize',
-						color: '#FFFFFF',
-					}}
-					animate={{ opacity: 1 }}
-				>
-					{displayText}
-				</motion.span>
-			</div>
+            <div className='h-[40px] lg:h-[110px]'>
+              <motion.span
+                style={{
+                  fontFamily: 'Helvetica, Arial, sans-serif',
+                  fontWeight: 600,
+                  display: 'flex',
+                  alignItems: 'center',
+                  textTransform: 'capitalize',
+                  color: '#FFFFFF',
+                }}
+                animate={{ opacity: 1 }}
+                className='text-2xl lg:text-6xl'
+              >
+                {displayText}
+              </motion.span>
+            </div>
             <span
               style={{
                 fontFamily: 'Helvetica, Arial, sans-serif',

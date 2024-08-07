@@ -12,13 +12,12 @@ const MainPoint = ({title, subTitle, image, des1, des2, videosrc, type}) => {
                         fontFamily: 'Helvetica, Arial, sans-serif',
                         fontStyle: "normal",
                         fontWeight: "600",
-                        fontSize: "54px",
-                        lineHeight: "68px",
                         display: "flex",
                         alignItems: "center",
                         textTransform: "capitalize",
                         color: "#2596BE",
                     }}
+                    className='text-2xl lg:text-6xl'
                     >
                     {title}
                     </span>
@@ -29,13 +28,12 @@ const MainPoint = ({title, subTitle, image, des1, des2, videosrc, type}) => {
                         fontFamily: 'Helvetica, Arial, sans-serif',
                         fontStyle: "normal",
                         fontWeight: "600",
-                        fontSize: "54px",
-                        lineHeight: "68px",
                         display: "flex",
                         alignItems: "center",
                         textTransform: "capitalize",
                         color: "#FFFFFF",
                     }}
+                    className='text-2xl lg:text-6xl'
                     >
                     {subTitle}
                     </span>
@@ -53,7 +51,7 @@ const MainPoint = ({title, subTitle, image, des1, des2, videosrc, type}) => {
                                 alignItems: "center",
                                 color: "#F8F8F8",
                             }}
-                            className='my-5 md:w-[75%]'
+                            className='my-5 lg:w-[75%]'
                         >
                             {des1}
                         </span>

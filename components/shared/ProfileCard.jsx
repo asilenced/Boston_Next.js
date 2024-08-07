@@ -5,7 +5,7 @@ import nextbut from '../../public/images/nextbut.svg'
 
 const ProfileCard = ({image, name, des }) => {
     return (
-        <div className="flex flex-col w-full p-10 md:w-1/3" style={{background: 'rgba(28, 28, 28, 0.9)', alignItems: 'flex-start', borderRadius: '30px'}}>
+        <div className="flex flex-col w-full p-10 lg:w-2/5" style={{background: 'rgba(28, 28, 28, 0.9)', alignItems: 'flex-start', borderRadius: '30px'}}>
             <Image 
                 src={image}
                 style={{width: '121px', height: 'auto', alignSelf: 'center'}}

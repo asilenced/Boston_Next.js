@@ -46,11 +46,11 @@ function Index() {
           // className='-ml-50'
         >
           <div className='container px-5 mx-auto'>
-            <div className='flex flex-wrap items-center justify-between mx-auto' style={{ color: '#2596BE', fontSize: '45px', lineHeight: '36px', textAlign: 'center', marginTop: '100px' }}>
-              <div className='flex justify-center flex-1 mt-5 mb-5'>
+            <div className='flex flex-wrap items-center justify-between mx-auto lg:mt-20' style={{ color: '#2596BE', textAlign: 'center'}}>
+              <div className='flex justify-center flex-1 mt-5 mb-5 text-2xl lg:text-4xl'>
                 <span>6+ Founders</span>
               </div>
-              <div className='flex justify-center flex-1'>
+              <div className='flex justify-center flex-1 text-2xl lg:text-4xl'>
                 <span>25+ Innovators</span>
               </div>
             </div>
@@ -72,15 +72,13 @@ function Index() {
           }}
       >
         <div
-          className="container flex flex-col items-center justify-between mx-auto md:flex-row"
+          className="container flex flex-col items-center justify-between mx-auto text-2xl md:flex-row lg:text-6xl"
           style={{
             color: '#FFFFFF',
-            fontSize: '57px',
-            lineHeight: '70px',
             textAlign: 'center',
           }}
         >
-          <div className="flex flex-col justify-center flex-1 mt-5 mb-5">
+          <div className="flex flex-col justify-center flex-1 lg:mb-5 lg:mt-5">
             <span>Our current</span>
             <span style={{ color: '#2596BE' }}>leadership</span>
           </div>
@@ -100,7 +98,7 @@ function Index() {
           // className='-ml-50'
         >
           <div className='container flex flex-col px-5 mx-auto'>
-            <div className='flex flex-row flex-wrap justify-center'>
+            <div className='flex flex-row flex-wrap justify-center space-x-5'>
               <Profile 
                 image={pro1}
                 linkedin={"https://www.linkedin.com/in/nicholas-irving-393787221/"}
@@ -141,22 +139,20 @@ function Index() {
               }}
           >
             <div
-              className="container flex flex-col items-center justify-between mx-auto mt-5 md:flex-row"
+              className="container flex flex-col items-center justify-between mx-auto mt-5 text-2xl lg:text-6xl md:flex-row"
               style={{
                 color: '#FFFFFF',
-                fontSize: '57px',
-                lineHeight: '70px',
                 textAlign: 'center',
               }}
             >
-              <div className="flex flex-col justify-center flex-1 mt-5 mb-5">
+              <div className="flex flex-col justify-center flex-1 lg:mt-5 lg:mb-5">
                 <span>Some of our</span>
                 <span style={{color: '#2596BE'}}>advisors</span>
               </div>
             </div>
           </div>
           <div className='container flex flex-col items-center justify-center mx-auto mt-10'>
-            <div className='flex flex-row flex-wrap justify-center gap-5 mt-10'>
+            <div className='flex flex-row flex-wrap justify-center gap-10 mt-10'>
               <ProfileCard
                 image={member1}
                 name="Dr.James Hillis"

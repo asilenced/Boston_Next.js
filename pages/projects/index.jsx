@@ -35,19 +35,19 @@ function index() {
 				<MainPoint type={"video"} videosrc={"/whycreate.mp4"} title={"Why Create"} subTitle={"Projects And Innovations?"} des1={"At Boston Innovations, we take innovation so seriously, it's literally in our name. Every individual harbors an intrinsic urge to create, innovate, and change the world around them. At Boston Innovations, we recognize and harness this universal drive, channeling it into the the development of advanced medical devices, cutting-edge pharmaceuticals, and comprehensive artificial intelligence healthcare systems."}/>
 			</div>
 			<div style={{ background: 'rgba(2, 23, 35, 0.8)', marginTop: '50px', width: '100%', position: 'relative', left: '50%', right: '50%', marginLeft: '-50vw', marginRight: '-50vw' }}>
-				<div className='container flex flex-wrap items-center justify-between mx-auto' style={{ color: '#2596BE', fontSize: '45px', lineHeight: '36px', textAlign: 'center' }}>
-					<div className='flex justify-center flex-1 mt-5 mb-5'>
+				<div className='container flex flex-wrap items-center justify-between mx-auto' style={{ color: '#2596BE', textAlign: 'center' }}>
+					<div className='flex justify-center flex-1 mt-5 mb-5 text-2xl lg:text-5xl'>
 						<span>4+ Projects</span>
 					</div>
-					<div className='flex justify-center flex-1 mt-5 mb-5'>
+					<div className='flex justify-center flex-1 mt-5 mb-5 text-2xl lg:text-5xl'>
 						<span>25+ Innovators</span>
 					</div>
 				</div>
 			</div>
 			<div className='container mx-auto mt-10'>
 				<div className='flex-row justify-center text-center'>
-					<span style={{fontSize: '54px', lineHeight: '68px', textTransform: 'capitalize', alignItems: 'center', fontWeight: '600', color: '#2596BE'}}>Our Current</span><br />
-					<span style={{fontSize: '54px', lineHeight: '68px', textTransform: 'capitalize', alignItems: 'center', fontWeight: '600', color: '#FFFFFF'}}>Projects</span>
+					<span className='text-2xl lg:text-6xl' style={{textTransform: 'capitalize', alignItems: 'center', fontWeight: '600', color: '#2596BE'}}>Our Current</span><br />
+					<span style={{textTransform: 'capitalize', alignItems: 'center', fontWeight: '600', color: '#FFFFFF'}}>Projects</span>
 				</div>
 				<ProjectItem
 					image={project1}
@@ -81,31 +81,32 @@ function index() {
 				<div style={{fontSize: '17px', lineHeight: '30px', alignItems: 'center', textAlign: 'center', color: "#FFFFFF", width: '60%'}} className='mx-auto mt-5'>
 					<span>Please reach out to the link below or text our company line! We would love to partner with others who are as passionate in science as we are! </span>
 				</div>
-				<div className="flex justify-center mx-auto mt-5" style={{display: 'flex', justifyContent: 'center', alignItems: 'center'}}>
+				<div className="flex justify-center w-full mx-auto mt-5" style={{display: 'flex', justifyContent: 'center', alignItems: 'center'}}>
 					{/* <button
 						style={{padding: '15px 111px', background: '#2596BE', border: '1px solid #2596BE', borderRadius: '15px'}}
 						className="justify-items-center"
 					>
 						<span style={{fontSize: '25px', lineHeight: '30px', color: '#FFFFFF'}}>Info</span>
 					</button> */}
-					<a href='mailto:outreach@bostoninnovations.org'>
-					<button
-					className="
-						px-[111px]
-						py-[15px]
-						bg-[#2596BE]
-						rounded-[15px]
-						justify-items-center
-						hover:bg-[#1E7BA7]
-						transition
-						duration-300
-					"
-					>
-					<span href='mailto:outreach@bostoninnovations.org' className="text-[25px] leading-[30px] text-white">
-						Info
-					</span>
-					</button>
-					</a>
+					{/* <a href='mailto:outreach@bostoninnovations.org'> */}
+						<button
+							className="
+							w-[50%]
+							lg:w-[200px]
+							py-2
+							bg-[#2596BE]
+							rounded-[15px]
+							justify-items-center
+							hover:bg-[#1E7BA7]
+							transition
+							duration-300
+							"
+						>
+						<span href='mailto:outreach@bostoninnovations.org' className="text-[25px] leading-[30px] text-white">
+							Info
+						</span>
+						</button>
+					{/* </a> */}
 				</div>
 			</div>
 		</motion.section>

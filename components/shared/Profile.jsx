@@ -5,18 +5,18 @@ import mailicon from '../../public/images/mailicon.svg';
 
 const Profile = ({image, role, name, des, linkedin, mail}) => {
     return (
-        <div className="flex flex-col mt-10 mb-10" style={{color: '#FFFFFF'}}>
+        <div className="flex flex-col mt-10 mb-10 lg:w-[250px] w-full" style={{color: '#FFFFFF'}}>
             <div>
                 <Image 
                     src={image}
-                    className="mx-auto"
-                    style={{borderRadius: '40px', width: '250px', height: '250px'}}
+                    className="w-full mx-auto"
+                    style={{borderRadius: '40px'}}
                 />
             </div>
-            <div className="flex flex-col justify-center px-10 py-5">
+            <div className="flex flex-col px-10 py-5">
                 <span style={{fontSize: '12px', lineHeight: '160%', textAlign: 'center'}}>{role}</span>
                 <span style={{fontSize: '20px', lineHeight: '130%', textAlign: 'center'}}>{name}</span>
-                <span style={{fontSize: '12px', lineHeight: '19.2px', textAlign: 'center', width: '240px', color: '#B8B8B8', marginTop: '10px'}}>{des}</span>
+                <span style={{fontSize: '12px', lineHeight: '19.2px', textAlign: 'center', width: '100%', color: '#B8B8B8', marginTop: '10px'}}>{des}</span>
             </div>
             <div className="flex mx-auto space-x-3">
               <a><Image src={discordicon} className="inline" style={{width: '30px', height: '30px'}} alt="Discord" /></a>

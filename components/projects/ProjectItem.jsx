@@ -18,7 +18,7 @@ const ProjectItem = ({ title, description, description1, image }) => {
                 <p className="mb-5" style={{fontSize: '17px', lineHeight: '26px', color: '#F8F8F8'}}>{description}</p>
                 <p className="mb-5" style={{fontSize: '17px', lineHeight: '26px', color: '#F8F8F8'}}>{description1}</p>
             </div>
-            <div>
+            <div className='flex justify-center lg:block'>
                 {/* <button
                     style={{boxSizing: 'border-box', background: '#0B556F', border: '1px solid #0B556F', borderRadius: '20px', width: '262.75px', height: '52px', fontSize: '17px', lineHeight: '20px'}}
                 >
@@ -31,7 +31,7 @@ const ProjectItem = ({ title, description, description1, image }) => {
                     border
                     border-[#0B556F]
                     rounded-[20px]
-                    w-[262.75px]
+                    w-[50%]
                     h-[52px]
                     text-[17px]
                     leading-[20px]
