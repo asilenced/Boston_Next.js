@@ -32,11 +32,11 @@ const OrganizationImages = () => {
         }
 
         .image-container {
-          flex: 0 0 calc(100% / 6); /* Ensure 6 images fit within the container width */
+          flex: 0 0 calc(100% / 6);
           display: flex;
           justify-content: center;
           align-items: center;
-          padding: 0 15px; /* 30px total space between images (15px on each side) */
+          padding: 0 15px;
         }
 
         @keyframes rotateImages {
