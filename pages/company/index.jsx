@@ -33,7 +33,7 @@ function Index() {
           // backgroundImage: `url(/images/back4.png)`,
           paddingBottom: '80px',
           // background: `linear-gradient(0.81deg, rgba(2, 24, 35, 0.9) 99%, rgba(2, 24, 35, 0.9) 99.82%)`
-          // background: 'rgba(2, 24, 35, 0.9)'
+          background: 'rgba(2, 24, 35, 0.9)'
         }}      
       >
         <div className="container mx-auto">
@@ -155,11 +155,13 @@ function Index() {
             <div className='flex flex-row flex-wrap justify-center gap-10 mt-10'>
               <ProfileCard
                 image={member1}
+                link={"https://www.researchgate.net/profile/James-Hillis"}
                 name="Dr.James Hillis"
                 des="Doctorate from Oxford in Medicine and Director of Neurological Digital Clinical Research and Artificial Intelligence Organization at Mass General Brigham"
               />
               <ProfileCard
                 image={member2}
+                link={"https://www.healio.com/authors/drett"}
                 name="Dr.Doug Rett"
                 des="Chief of Optometry for the VA hospitals in the Greater Boston area with a staff of over a dozen doctors. One of the nation leads for Telemedicine roll-out throughout New England."
               />

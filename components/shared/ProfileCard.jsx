@@ -2,13 +2,15 @@ import Image from "next/image";
 import markstart from '../../public/images/mark_start.svg';
 import markend from '../../public/images/mark_end.svg';
 import nextbut from '../../public/images/nextbut.svg'
+import Link from "next/link";
 
-const ProfileCard = ({image, name, des }) => {
+const ProfileCard = ({image, name, des, link }) => {
     return (
         <div className="flex flex-col w-full p-10 lg:w-2/5" style={{background: 'rgba(28, 28, 28, 0.9)', alignItems: 'flex-start', borderRadius: '30px'}}>
             <Image 
                 src={image}
-                style={{width: '121px', height: 'auto', alignSelf: 'center'}}
+                style
+                ={{width: '121px', height: 'auto', alignSelf: 'center'}}
             />
             <span style={{fontSize: '20px', lineHeight: '130%', color: '#FFFFFF', alignSelf: 'center'}}>
                 {name}
@@ -24,15 +26,9 @@ const ProfileCard = ({image, name, des }) => {
                 src={markend}
                 style={{width: '37px', height: 'auto', marginTop: '25px'}}
             />
-            <span style={{color: 'rgba(2, 23, 35, 0.8)', fontSize: '16px', lineHeight: '20px', letterSpacing: '1px', textTransform: 'uppercase', marginTop: '25px'}}>
-                KB Nimo
-            </span>
-            <span style={{fontSize: '13px', color: '#8B8B8B', lineHeight: '20px'}}>
-                Head of Operatons, Loyal
-            </span>
             <div style={{ display: 'flex', alignItems: 'center', marginTop: '17px' }}>
                 <span style={{lineHeight: '20px', color: '#2596BE', textDecoration: 'underline', cursor: 'pointer' }}>
-                    View Case Study
+                    <Link href={link} target='_blank'>View Research</Link>
                 </span>
                 <Image 
                     src={nextbut}

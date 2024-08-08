@@ -2,7 +2,7 @@ import Image from "next/image";
 
 const Opportunity = ({ open, title, des, months, titlesize }) => {
   return (
-    <div className="flex flex-col space-y-8 md:p-[44px] p-[20px] text-white bg-[#333333] md:w-3/7 bg-opacity-40 rounded-2xl">
+    <div className="flex flex-col space-y-8 md:p-[44px] p-[20px] text-white bg-[#4d4c4c] md:w-3/7 bg-opacity-40 rounded-2xl">
       <div
         className={`flex self-center justify-center px-2 py-2 rounded-lg text-lg ${
           open === 1 ? 'bg-green-800' : 'bg-red-800 bg-opacity-90'

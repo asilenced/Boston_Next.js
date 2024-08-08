@@ -2,6 +2,7 @@ import Image from "next/image";
 import discordicon from '../../public/images/discordicon.svg';
 import inicon from '../../public/images/inicon.svg';
 import mailicon from '../../public/images/mailicon.svg';
+import Link from "next/link";
 
 const Profile = ({image, role, name, des, linkedin, mail}) => {
     return (
@@ -19,9 +20,9 @@ const Profile = ({image, role, name, des, linkedin, mail}) => {
                 <span style={{fontSize: '12px', lineHeight: '19.2px', textAlign: 'center', width: '100%', color: '#B8B8B8', marginTop: '10px'}}>{des}</span>
             </div>
             <div className="flex mx-auto space-x-3">
-              <a><Image src={discordicon} className="inline" style={{width: '30px', height: '30px'}} alt="Discord" /></a>
-              <a href={linkedin}><Image src={inicon} className="inline" style={{width: '27px', height: '27px'}} alt="LinkedIn" /></a>
-              <a href={`mailto:${mail}`}><Image src={mailicon} className="inline" style={{width: '27px', height: '27px'}} alt="EMail" /></a>
+              <Link href={""}><Image src={discordicon} className="inline" style={{width: '30px', height: '30px'}} alt="Discord" /></Link>
+              <Link href={linkedin} target='_blank'><Image src={inicon} className="inline" style={{width: '27px', height: '27px'}} alt="LinkedIn" /></Link>
+              <Link href={`mailto:${mail}`}><Image src={mailicon} className="inline" style={{width: '27px', height: '27px'}} alt="EMail" /></Link>
             </div> 
         </div>
     )

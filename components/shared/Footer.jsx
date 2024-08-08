@@ -12,13 +12,14 @@ import contactnum from '../../public/images/contactnum.svg';
 import contactweb from '../../public/images/contactweb.svg';
 import hearticon from '../../public/images/hearticon.svg';
 import LinkButton1 from './ButtonLink1';
+import Link from 'next/link';
 
 const Footer = () => {
   return (
     <footer className="py-12 text-white" style={{background: '#021723', fontFamily: 'Helvetica, Arial, sans-serif'}}>
       <div className="container px-6 mx-auto">
         <div className="flex flex-col justify-between lg:flex-row">
-          <div className="flex flex-row flex-wrap justify-between lg:flex-col w-full mb-6 lg:w-1/4 basis-[30%]"> {/* mainpart */}
+          <div className="flex flex-row flex-wrap lg:justify-between lg:flex-col w-full mb-6 lg:w-1/4 basis-[30%]"> {/* mainpart */}
             <div className="flex items-center mb-4 lg:mr-0">
               <Image
                 src={logoLight}
@@ -115,7 +116,7 @@ const Footer = () => {
                   className='inline mr-2'
                   alt="Phone"
                 />
-                <a href="#" className="hover:underline">Schedule a Demo Today</a>
+                <Link href="https://calendly.com/nicholasirving-v_v1/30min" className="hover:underline" target='_blank'>Schedule a Demo Today</Link>
               </div>
               <div style={{fontSize: "17px"}} className='flex lg:my-5 lg:w-full'>
                 <Image src={contactemail}
