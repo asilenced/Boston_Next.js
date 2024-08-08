@@ -1,5 +1,5 @@
 import Image from 'next/image';
-import org1 from '../../public/images/org1.svg'
+import org1 from '../../public/images/org1.svg';
 import org2 from '../../public/images/org2.svg';
 import org3 from '../../public/images/org3.svg';
 import org4 from '../../public/images/org4.svg';
@@ -23,7 +23,7 @@ const OrganizationImages = () => {
           overflow: hidden;
           position: relative;
           width: 100%;
-          height: auto; /* Adjust this height to fit your images */
+          height: auto;
         }
 
         .images-wrapper {
@@ -32,7 +32,7 @@ const OrganizationImages = () => {
         }
 
         .image-container {
-          flex: 0 0 calc(100% / 6);
+          flex: 0 0 calc(100% / 3);
           display: flex;
           justify-content: center;
           align-items: center;
@@ -45,6 +45,18 @@ const OrganizationImages = () => {
           }
           100% {
             transform: translateX(calc(-100%));
+          }
+        }
+
+        @media (max-width: 600px) {
+          .image-container {
+            flex: 0 0 calc(100% / 3);
+          }
+        }
+
+        @media (min-width: 601px) {
+          .image-container {
+            flex: 0 0 calc(100% / 6);
           }
         }
       `}</style>

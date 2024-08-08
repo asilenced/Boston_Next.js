@@ -51,7 +51,7 @@ const MainPoint = ({title, subTitle, image, des1, des2, videosrc, type}) => {
                                 alignItems: "center",
                                 color: "#F8F8F8",
                             }}
-                            className='my-5 lg:w-[75%]'
+                            className='my-5 lg:w-[80%]'
                         >
                             {des1}
                         </span>
