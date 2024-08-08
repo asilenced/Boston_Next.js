@@ -6,6 +6,7 @@ const ProjectItem = ({ title, description, description1, image }) => {
   
   useEffect(() => {
     window.addEventListener('resize', handleResize);
+    if(window.innerWidth < 768) setPhone(1);
     return () => {
       window.removeEventListener('resize', handleResize, true);
     }
