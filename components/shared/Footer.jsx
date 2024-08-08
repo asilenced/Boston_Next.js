@@ -34,29 +34,29 @@ const Footer = () => {
             </div>
             <div className="flex flex-row items-center justify-end space-x-3 lg:justify-start">
               <div className='flex w-[30px]'>
-                <a href="https://discord.gg/6Z73xt5fWJ">
+                <Link target='_blank' href="https://discord.gg/6Z73xt5fWJ">
                   <Image src={logodiscord} className="inline w-[30px]" alt="Discord" />
-                </a>
+                </Link>
               </div>
               <div className='flex w-[30px]'>
-                <a href="">
+                <Link href="">
                   <Image src={logox} className="inline w-[30px]" alt="Twitter" />
-                </a>
+                </Link>
               </div>
               <div className='flex w-[30px]'>
-                <a href="https://www.linkedin.com/company/boston-innovations/">
+                <Link target='_blank' href="https://www.linkedin.com/company/boston-innovations/">
                   <Image src={logolink} className="inline w-[30px]" alt="LinkedIn" />
-                </a>
+                </Link>
               </div>
               <div className='flex w-[30px]'>
-                <a href="">
+                <Link href="">
                   <Image src={logoinsta} className="inline w-[30px]" alt="Instagram" />
-                </a>
+                </Link>
               </div>
               <div className='flex w-[30px]'>
-                <a href="">
+                <Link href="">
                   <Image src={logoyou} className="inline w-[30px]" alt="YouTube" />
-                </a>
+                </Link>
               </div>
             </div>
             <div className='flex'>
@@ -149,7 +149,7 @@ const Footer = () => {
           </div>
         </div>
         <div className="pt-6 mt-6 text-center border-t border-gray-700">
-          <a href='https://www.linkedin.com/company/boston-innovations/'><p className="text-sm">&copy; 2024 Boston Innovations. All Rights Reserved.</p></a>
+          <Link target='_blank' href='https://www.linkedin.com/company/boston-innovations/'><p className="text-sm">&copy; 2024 Boston Innovations. All Rights Reserved.</p></Link>
         </div>
       </div>
     </footer>
