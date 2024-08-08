@@ -50,7 +50,6 @@ a {
 	align-items: center;
 	background: #2596BE;
 	border-radius: 20px;
-	padding: 16px 55px;
 	gap: 10px;
 	width: auto;
 	transition: background-color 0.3s ease; /* Smooth transition for the background color */

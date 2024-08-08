@@ -26,7 +26,7 @@ function Index() {
               <span className="text-2xl font-semibold text-blue-500 lg:text-6xl" style={{color: '#2596BE'}}>Boston Innovations</span>
               <span className="text-2xl font-semibold text-white lg:text-6xl">Opportunities</span>
               <button
-                className='mt-15 custom-button'
+                className='w-[50%] px-4 py-2 sm:w-auto sm:px-[55px] sm:py-[16px] mt-15 custom-button'
                 style={{fontFamily: 'Helvetica, Arial, sans-serif'}}
               >
                 Scan to learn more!
