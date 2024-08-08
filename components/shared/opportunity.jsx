@@ -37,10 +37,11 @@ const Opportunity = ({ open, title, des, months, titlesize }) => {
       <button
         className="
           self-center
-          py-4
+          sm:py-4
+          py-1
           justify-items-center
           w-auto
-          px-2
+          px-4
           lg:w-[200px]
           rounded-2xl
           bg-[#2596BE]
