@@ -33,7 +33,7 @@ function Index() {
           // backgroundImage: `url(/images/back4.png)`,
           paddingBottom: '80px',
           // background: `linear-gradient(0.81deg, rgba(2, 24, 35, 0.9) 99%, rgba(2, 24, 35, 0.9) 99.82%)`
-          background: 'rgba(2, 24, 35, 0.9)'
+          // background: 'rgba(2, 24, 35, 0.9)'
         }}      
       >
         <div className="container mx-auto">
