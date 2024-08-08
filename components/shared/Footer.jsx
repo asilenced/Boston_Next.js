@@ -19,7 +19,7 @@ const Footer = () => {
     <footer className="py-12 text-white" style={{background: '#021723', fontFamily: 'Helvetica, Arial, sans-serif'}}>
       <div className="container px-6 mx-auto">
         <div className="flex flex-col justify-between lg:flex-row">
-          <div className="flex flex-row flex-wrap lg:justify-between lg:flex-col w-full mb-6 lg:w-1/4 basis-[30%]"> {/* mainpart */}
+          <div className="flex flex-row flex-wrap justify-between lg:flex-col w-full mb-6 lg:w-1/4 basis-[30%]"> {/* mainpart */}
             <div className="flex items-center mb-4 lg:mr-0">
               <Image
                 src={logoLight}
