@@ -34,14 +34,14 @@ const AppBanner = () => {
 
   useEffect(() => {
     window.addEventListener('resize', handleResize);
-    if(window.innerWidth < 768) setPhone(1);
+    if(window.innerWidth < 1024) setPhone(1);
     return () => {
       window.removeEventListener('resize', handleResize, true);
     }
   }, []);
 
   const handleResize = (event) => {
-    if(event.target.innerWidth < 768) {
+    if(event.target.innerWidth < 1024) {
       setPhone(1);
     }
     else setPhone(0);
@@ -222,10 +222,9 @@ const AppBanner = () => {
               </motion.span>
             </div>
             
-          <div className="self-start mx-auto mt-5 mb-10 lg:mb-0">
+          <div className="flex justify-center mt-5 mb-10">
             <Image
               src={markLogo}
-              className="self-start inline w-30"
               alt="Logo"
               width={400}
               height={400}
