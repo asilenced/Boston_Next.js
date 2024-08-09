@@ -2,7 +2,7 @@ import PagesMetaHead from '../../components/PagesMetaHead';
 import AppHeader from '../../components/shared/AppHeader';
 import { motion } from 'framer-motion';
 import Image from 'next/image';
-import mark1 from '../../public/images/mark1.svg';
+import mark1 from '../../public/images/mark2.png';
 import mark from '../../public/images/mark.svg';
 import mark2 from '../../public/images/mark2.svg';
 import res1 from '../../public/images/res1.svg';
