@@ -1,6 +1,5 @@
 import Footer from '../shared/Footer';
 import PagesMetaHead from '../PagesMetaHead';
-import loading from '../../public/images/loading.svg';
 
 const DefaultLayout = ({ children }) => {
 	return (
