@@ -2,6 +2,7 @@ import Link from 'next/link';
 import logoLight from '../../public/images/logo-light.svg';
 import { FiX, FiMenu } from 'react-icons/fi';
 import Image from 'next/image';
+import HeaderButton from './HeaderButton';
 
 const MenuModal = ({ showMenu, toggleMenu }) => {
   return (
@@ -80,28 +81,16 @@ const MenuModal = ({ showMenu, toggleMenu }) => {
           </button>
         </div>
         {['Projects', 'Partners', 'Our Company', 'Opportunities', 'Log In', 'Book Meeting'].map((title, index) => (
-          <div
-            key={index}
-            style={{
-              fontFamily: 'Helvetica, Arial, sans-serif',
-              fontWeight: 500,
-              fontSize: '17px',
-              color: '#FFFFFF',
-              lineHeight: '20px',
-            }}
-            className={`block pt-3 mb-2 text-lg text-left border-t-2 text-primary-dark dark:text-ternary-light hover:text-secondary-dark dark:hover:text-secondary-light border-gray-400 dark:border-secondary-dark ${
-              index === 0 ? 'border-t-0' : ''
-            }`}
-          >
-             { 
-              title === 'Projects' ? <Link href={'projects'} aria-label={title}>{title}</Link> : 
-              title === 'Partners' ? <Link href={'partners'} aria-label={title}>{title}</Link> : 
-              title === 'Our Company' ? <Link href={'company'} aria-label={title}>{title}</Link> : 
-              title === 'Opportunities' ? <Link href={'opportunities'} aria-label={title}>{title}</Link> : 
-              title === 'Log In' ? <Link href={''} aria-label={title}>{title}</Link> : 
-              title === 'Book Meeting' ? <Link href={'https://calendly.com/nicholasirving-v_v1/30min'} aria-label={title} target='_blank' rel="noopener noreferrer">{title}</Link> : ''
+            <>
+            { 
+              title === 'Projects' ? <Link href={'projects'} aria-label={title}><HeaderButton title={title} index={index} /></Link> : 
+              title === 'Partners' ? <Link href={'partners'} aria-label={title}><HeaderButton title={title} index={index} /></Link> : 
+              title === 'Our Company' ? <Link href={'company'} aria-label={title}><HeaderButton title={title} index={index} /></Link> : 
+              title === 'Opportunities' ? <Link href={'opportunities'} aria-label={title}><HeaderButton title={title} index={index} /></Link> : 
+              title === 'Log In' ? <Link href={''} aria-label={title}><HeaderButton title={title} index={index} /></Link> : 
+              title === 'Book Meeting' ? <Link href={'https://calendly.com/nicholasirving-v_v1/30min'} aria-label={title} target='_blank' rel="noopener noreferrer"><HeaderButton title={title} index={index} /></Link> : ''
             }
-          </div>
+            </>
         ))}
       </div>
     </div>
