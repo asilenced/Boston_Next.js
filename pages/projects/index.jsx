@@ -13,7 +13,7 @@ import loading from '../../public/images/loading.svg';
 import Image from 'next/image';
 import period from '../../data/const';
 
-function index() {
+function Index() {
 	
   const [isLoading, setIsLoading] = useState(true);
   
@@ -136,4 +136,4 @@ function index() {
   );
 }
 
-export default index;
+export default Index;
