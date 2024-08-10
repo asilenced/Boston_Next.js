@@ -6,7 +6,7 @@ import UseScrollToTop from '../hooks/useScrollToTop';
 function MyApp({ Component, pageProps }) {
 	return (
 		<AnimatePresence>
-			<div className="transition duration-300 bg-secondary-light dark:bg-primary-dark">
+			<div className="transition duration-300 bg-primary-dark">
 				<DefaultLayout>
 					<Component {...pageProps} />
 				</DefaultLayout>
