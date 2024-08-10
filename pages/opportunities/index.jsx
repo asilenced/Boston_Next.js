@@ -1,14 +1,33 @@
+import { useState, useEffect } from 'react';
 import PagesMetaHead from '../../components/PagesMetaHead';
 import AppHeader from '../../components/shared/AppHeader';
 import { motion } from 'framer-motion';
 import Image from 'next/image';
 import qrmark from '../../public/images/qrmark.svg';
 import Opportunity from '../../components/shared/opportunity';
+import loading from '../../public/images/loading.svg';
+import period from '../../data/const';
 
 function Index() {
+  	
+  const [isLoading, setIsLoading] = useState(true);
+  
+  useEffect(() => {
+    const timer = setTimeout(() => {
+      setIsLoading(false);
+    }, period)
+    return () => clearTimeout(timer);
+  }, []);
+
   return (
     <>
       <PagesMetaHead title="Projects" />
+      <div className='bg-primary-dark'>
+			{isLoading ? (
+				<div class="loading-container flex justify-center items-center h-screen">
+				  <Image src={loading} className='sm:w-[200px] sm:h-[200px] w-[100px] h-[100px]' alt="Loading" />
+				</div>
+			) : (
       <div
         className="bg-local bg-cover"
         style={{ backgroundImage: `url(/images/back5.svg)`, paddingBottom: '40px' }}
@@ -67,6 +86,8 @@ function Index() {
             </div>
           </div>
         </motion.section>
+      </div>
+      )}
       </div>
     </>
   );
