@@ -1,4 +1,3 @@
-import { useState, useEffect } from 'react';
 import PagesMetaHead from '../../components/PagesMetaHead';
 import AppHeader from '../../components/shared/AppHeader';
 import { motion } from 'framer-motion';
@@ -14,31 +13,13 @@ import res5 from '../../public/images/res5.svg';
 import res6 from '../../public/images/res6.svg';
 import res7 from '../../public/images/res7.svg';
 import OrganizationImages from '../../components/shared/OrginzationImages';
-import loading from '../../public/images/loading.svg';
-import period from '../../data/const';
 import Footer from '../../components/shared/Footer';
 
 function Index() {
-  	
-  const [isLoading, setIsLoading] = useState(true);
-  
-  useEffect(() => {
-    const timer = setTimeout(() => {
-      setIsLoading(false);
-    }, period)
-    return () => clearTimeout(timer);
-  }, []);
-  
   return (
     <>
       <PagesMetaHead title="Projects" />
       <div className='bg-primary-dark'>
-			{isLoading ? (
-				<div class="loading-container flex justify-center items-center h-screen">
-				  <Image src={loading} className='sm:w-[200px] sm:h-[200px] w-[100px] h-[100px]' alt="Loading" />
-				</div>
-			) : (
-        <>
           <div
             className="bg-local"
             style={{
@@ -274,9 +255,6 @@ function Index() {
             </motion.section>
             </div>
           </div>
-          <Footer />
-        </>
-      )}
       </div>
     </>
   );

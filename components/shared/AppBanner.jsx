@@ -1,11 +1,8 @@
-import { useState, useEffect } from 'react';
 import { motion } from 'framer-motion';
+import { useState, useEffect } from 'react';
 import Image from 'next/image';
 import markLogo from '../../public/images/mark.svg';
 import AppHeader from './AppHeader';
-import loading from '../../public/images/loading.svg';
-import period from '../../data/const';
-import Footer from './Footer';
 import Link from 'next/link';
 
 const AppBanner = () => {
@@ -16,7 +13,6 @@ const AppBanner = () => {
   const [subIndex, setSubIndex] = useState(0);
   const [isDeleting, setIsDeleting] = useState(false);
   const [speed, setSpeed] = useState(150);
-  const [isLoading, setIsLoading] = useState(true);
 
   useEffect(() => {
     const handleTyping = () => {
@@ -52,22 +48,8 @@ const AppBanner = () => {
     else setPhone(0);
   }
 
-  useEffect(() => {
-    const timer = setTimeout(() => {
-      setIsLoading(false);
-    }, period);
-    return () => clearTimeout(timer);
-  }, []);
-
-
   return (
     <div className='bg-primary-dark'>
-      {isLoading ? (
-        <div class="loading-container flex justify-center items-center h-screen">
-            <Image src={loading} className='sm:w-[200px] sm:h-[200px] w-[100px] h-[100px]' alt="Loading" />
-        </div>
-      ) : (
-        <>
         <div
         className='bg-local'
         style={{
@@ -132,28 +114,6 @@ const AppBanner = () => {
               >
                 Founded by a group of ambitious Boston area engineering students and faculty, Boston Innovations Corporation stands at the forefront of biomedical technology and innovation.
               </span>
-              {/* <button
-                style={{
-                  fontFamily: "Helvetica, Arial, sans-serif",
-                  fontWeight: 500,
-                  fontSize: "17px",
-                  color: "#F8F8F8",
-                  lineHeight: "20px",
-                  display: "flex",
-                  background: "#2596BE",
-                  justifyContent: "center",
-                  alignItems: "center",
-                  borderRadius: "20px",
-                  border: "1px solid #2596BE",
-                  padding: "16px 41px",
-                  width: "193px",
-                  top: "calc(50%-52px/2)"
-                }}
-                className="px-4 py-2 my-5 text-left text-white duration-300 rounded-sm shadow-sm 24 myblock font-general-medium sm:hidden text-md hover:bg-[#1E7BA7]"
-                aria-label="Learn More Button"
-              >
-                Learn More
-              </button> */}
               <Link href='/company'>
               <button
                 style={{fontFamily: "Helvetica, Arial, sans-serif"}}
@@ -205,7 +165,6 @@ const AppBanner = () => {
                 height={400}
               />
             </div>
-          {/* </motion.section> */}
           </div>
           </motion.section>
         </div>
@@ -319,9 +278,6 @@ const AppBanner = () => {
         }
         </>
         </div>
-        <Footer />
-        </>
-      )}
     </div>
   );
 }

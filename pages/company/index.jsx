@@ -1,8 +1,6 @@
-import { useState, useEffect } from 'react';
 import PagesMetaHead from '../../components/PagesMetaHead';
 import AppHeader from '../../components/shared/AppHeader';
 import { motion } from 'framer-motion';
-import Image from 'next/image';
 import MainPoint from '../../components/shared/MainPoint';
 import team from '../../public/images/team.png';
 import Profile from '../../components/shared/Profile';
@@ -13,31 +11,13 @@ import pro5 from '../../public/images/pro5.png';
 import ProfileCard from '../../components/shared/ProfileCard';
 import member1 from '../../public/images/member1.svg';
 import member2 from '../../public/images/member2.svg';
-import loading from '../../public/images/loading.svg';
-import period from '../../data/const';
 import Footer from '../../components/shared/Footer';
 
 function Index() {
-  	
-  const [isLoading, setIsLoading] = useState(true);
-  
-  useEffect(() => {
-    const timer = setTimeout(() => {
-      setIsLoading(false);
-    }, period)
-    return () => clearTimeout(timer);
-  }, []);
-  
   return (
     <>
       <PagesMetaHead title="Projects" />
       <div className='bg-primary-dark'>
-			{isLoading ? (
-				<div class="loading-container flex justify-center items-center h-screen">
-				  <Image src={loading} className='sm:w-[200px] sm:h-[200px] w-[100px] h-[100px]' alt="Loading" />
-				</div>
-			) : (
-        <>
         <div
           className="bg-local"
           style={{
@@ -189,9 +169,6 @@ function Index() {
           </motion.section>
         </div>
         </div>
-        <Footer />
-        </>
-      )}
       </div>
     </>
   );
