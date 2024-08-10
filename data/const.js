@@ -1,3 +1,3 @@
-const period = 2000;
+const period = 1700;
 
 export default period;
