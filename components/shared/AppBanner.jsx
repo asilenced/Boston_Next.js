@@ -78,12 +78,12 @@ const AppBanner = () => {
         </div>
         <>
         { !phone ? <div className='container mx-auto'>
-          {/* <motion.section
+          <motion.section
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             transition={{ ease: 'easeInOut', duration: 0.9, delay: 0.2 }}
             className="flex flex-col items-center lg:mt-20 sm:justify-between lg:flex-row"
-          > */}
+          >
           <div
             className="flex flex-col items-center lg:mt-20 sm:justify-between lg:flex-row"
           >
@@ -102,7 +102,7 @@ const AppBanner = () => {
                 We Help Create
               </span>
               <div className='h-[40px] lg:h-[110px]'>
-                {/* <motion.span
+                <motion.span
                   style={{
                     fontFamily: 'Helvetica, Arial, sans-serif',
                     fontWeight: 600,
@@ -113,21 +113,9 @@ const AppBanner = () => {
                   }}
                   animate={{ opacity: 1 }}
                   className='text-2xl lg:text-6xl'
-                > */}
-                <div
-                  style={{
-                    fontFamily: 'Helvetica, Arial, sans-serif',
-                    fontWeight: 600,
-                    display: 'flex',
-                    alignItems: 'center',
-                    textTransform: 'capitalize',
-                    color: '#FFFFFF',
-                  }}
-                  className='text-2xl lg:text-6xl'
                 >
                   {displayText}
-                {/* </motion.span> */}
-                </div>
+                </motion.span>
               </div>
               <span
                 style={{
@@ -216,6 +204,7 @@ const AppBanner = () => {
             </div>
           {/* </motion.section> */}
           </div>
+          </motion.section>
         </div>
         :
         <div>
