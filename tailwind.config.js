@@ -25,6 +25,8 @@ module.exports = {
 				'secondary-dark': '#102D44',
 				'ternary-dark': '#1E3851',
 
+				'black-blue': '#0d2438',
+
 				// Extended v3 color
 				gray: colors.neutral,
 			},

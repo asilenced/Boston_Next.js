@@ -4,6 +4,7 @@
 
 html,
 body {
+	@apply min-h-screen bg-black-blue;
 	padding: 0;
 	margin: 0;
 	font-family: 'Helvetica, Arial, sans-serif';
