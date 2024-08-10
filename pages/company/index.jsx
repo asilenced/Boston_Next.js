@@ -15,6 +15,7 @@ import member1 from '../../public/images/member1.svg';
 import member2 from '../../public/images/member2.svg';
 import loading from '../../public/images/loading.svg';
 import period from '../../data/const';
+import Footer from '../../components/shared/Footer';
 
 function Index() {
   	
@@ -36,6 +37,7 @@ function Index() {
 				  <Image src={loading} className='sm:w-[200px] sm:h-[200px] w-[100px] h-[100px]' alt="Loading" />
 				</div>
 			) : (
+        <>
         <div
           className="bg-local"
           style={{
@@ -187,6 +189,8 @@ function Index() {
           </motion.section>
         </div>
         </div>
+        <Footer />
+        </>
       )}
       </div>
     </>

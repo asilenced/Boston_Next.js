@@ -7,6 +7,7 @@ import qrmark from '../../public/images/qrmark.svg';
 import Opportunity from '../../components/shared/opportunity';
 import loading from '../../public/images/loading.svg';
 import period from '../../data/const';
+import Footer from '../../components/shared/Footer';
 
 function Index() {
   	
@@ -28,6 +29,7 @@ function Index() {
 				  <Image src={loading} className='sm:w-[200px] sm:h-[200px] w-[100px] h-[100px]' alt="Loading" />
 				</div>
 			) : (
+        <>
       <div
         className="bg-local bg-cover"
         style={{ backgroundImage: `url(/images/back5.svg)`, paddingBottom: '40px' }}
@@ -87,6 +89,8 @@ function Index() {
           </div>
         </motion.section>
       </div>
+      <Footer />
+      </>
       )}
       </div>
     </>

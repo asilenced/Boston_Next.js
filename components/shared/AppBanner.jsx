@@ -5,6 +5,7 @@ import markLogo from '../../public/images/mark.svg';
 import AppHeader from './AppHeader';
 import loading from '../../public/images/loading.svg';
 import period from '../../data/const';
+import Footer from './Footer';
 
 const AppBanner = () => {
   const [phone, setPhone] = useState(0);
@@ -62,9 +63,10 @@ const AppBanner = () => {
     <div className='bg-primary-dark'>
       {isLoading ? (
         <div class="loading-container flex justify-center items-center h-screen">
-          <Image src={loading} className='sm:w-[200px] sm:h-[200px] w-[100px] h-[100px]' alt="Loading" />
+            <Image src={loading} className='sm:w-[200px] sm:h-[200px] w-[100px] h-[100px]' alt="Loading" />
         </div>
       ) : (
+        <>
         <div
         className='bg-local'
         style={{
@@ -307,6 +309,8 @@ const AppBanner = () => {
         }
         </>
         </div>
+        <Footer />
+        </>
       )}
     </div>
   );
