@@ -78,10 +78,13 @@ const AppBanner = () => {
         </div>
         <>
         { !phone ? <div className='container mx-auto'>
-          <motion.section
+          {/* <motion.section
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             transition={{ ease: 'easeInOut', duration: 0.9, delay: 0.2 }}
+            className="flex flex-col items-center lg:mt-20 sm:justify-between lg:flex-row"
+          > */}
+          <div
             className="flex flex-col items-center lg:mt-20 sm:justify-between lg:flex-row"
           >
             <div className="w-full lg:pl-15 lg:w-3/5">
@@ -199,7 +202,8 @@ const AppBanner = () => {
                 height={400}
               />
             </div>
-          </motion.section>
+          {/* </motion.section> */}
+          </div>
         </div>
         :
         <div>
