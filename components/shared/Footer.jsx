@@ -91,7 +91,7 @@ const Footer = () => {
             <div className="w-1/2 mb-6 md:w-1/4">
               <h3 className="mb-3 text-lg font-semibold" style={{ fontSize: "17px" }}>Services</h3>
               <ul style={{ fontSize: "14px", lineHeight: "20px" }}>
-                <li className='my-5'><LinkButton1 title={"Our AI Model"} footer={"1"} linkname={""} /></li>
+                <li className='my-5'><LinkButton1 title={"Our AI Model"} footer={"1"} linkname={"https://platform.openai.com/docs/models/continuous-model-upgrades"} /></li>
                 <li className='my-5'><LinkButton1 title={"3PL Fulfillment"} footer={"1"} linkname={""} /></li>
                 <li className='my-5'><LinkButton1 title={"Freight & Shipping"} footer={"1"} linkname={""} /></li>
                 <li className='my-5'><LinkButton1 title={"Custom Packaging"} footer={"1"} linkname={""} /></li>

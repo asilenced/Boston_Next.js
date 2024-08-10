@@ -6,6 +6,7 @@ import AppHeader from './AppHeader';
 import loading from '../../public/images/loading.svg';
 import period from '../../data/const';
 import Footer from './Footer';
+import Link from 'next/link';
 
 const AppBanner = () => {
   const [phone, setPhone] = useState(0);
@@ -153,6 +154,7 @@ const AppBanner = () => {
               >
                 Learn More
               </button> */}
+              <Link href='/company'>
               <button
                 style={{fontFamily: "Helvetica, Arial, sans-serif"}}
                 className="
@@ -178,6 +180,7 @@ const AppBanner = () => {
               >
                 Learn More
               </button>
+              </Link>
               <span
                 className='lg:mb-[150px] mb-10'
                 style={{
@@ -268,6 +271,7 @@ const AppBanner = () => {
               >
                 Founded by a group of ambitious Boston area engineering students and faculty, Boston Innovations Corporation stands at the forefront of biomedical technology and innovation.
               </span>
+              <Link href='/company'>
               <button
                 style={{fontFamily: "Helvetica, Arial, sans-serif"}}
                 className="
@@ -293,6 +297,7 @@ const AppBanner = () => {
               >
                 Learn More
               </button>
+              </Link>
               <span
                 className='lg:mb-[150px] mb-10'
                 style={{

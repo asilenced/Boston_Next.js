@@ -42,7 +42,7 @@ const LinkButton = ({ linkname, title, title1, footer }) => {
       `}</style>
       
       {/* <Link href={linkname}> */}
-        <a href={linkname}>
+        <Link href={linkname} target={`${linkname!='' ? '_blank' : ''}`}>
           <span style={{ display: 'block' }}>
             {title}
           </span>
@@ -51,7 +51,7 @@ const LinkButton = ({ linkname, title, title1, footer }) => {
               {title1}
             </span>
           )}
-        </a>
+        </Link>
       {/* </Link> */}
     </div>
   );
