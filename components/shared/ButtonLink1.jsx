@@ -1,6 +1,6 @@
 import Link from 'next/link';
 
-const LinkButton = ({ linkname, title, title1, footer }) => {
+const LinkButton = ({ linkname, title, title1, footer, newop }) => {
   let fontSize = footer === "1" ? "14px" : "17px";
   let fontWeight = footer === "1" ? 400 : 500; // Adjust as needed
 
@@ -42,7 +42,7 @@ const LinkButton = ({ linkname, title, title1, footer }) => {
       `}</style>
       
       {/* <Link href={linkname}> */}
-        <Link href={linkname} target={`${linkname!='' ? '_blank' : ''}`}>
+        <Link href={linkname} target={`${linkname!='' && !newop ? '_blank' : ''}`}>
           <span style={{ display: 'block' }}>
             {title}
           </span>

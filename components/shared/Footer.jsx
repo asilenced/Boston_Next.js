@@ -73,10 +73,10 @@ const Footer = () => {
             <div className="w-1/2 mb-6 md:w-1/4">
               <h3 className="mb-3 text-lg font-semibold" style={{ fontSize: "17px" }}>Overview</h3>
               <ul style={{ fontSize: "14px" }}>
-                <li className='my-5'><LinkButton1 title={"Projects"} footer={"1"} linkname={""} /></li>
-                <li className='my-5'><LinkButton1 title={"Partner"} footer={"1"} linkname={""} /></li>
-                <li className='my-5'><LinkButton1 title={"Our Company"} footer={"1"} linkname={""} /></li>
-                <li className='my-5'><LinkButton1 title={"Opportunities"} footer={"1"} linkname={""} /></li>
+                <li className='my-5'><LinkButton1 title={"Projects"} footer={"1"} linkname={"\projects"} newop={1} /></li>
+                <li className='my-5'><LinkButton1 title={"Partner"} footer={"1"} linkname={"\partner"} newop={1} /></li>
+                <li className='my-5'><LinkButton1 title={"Our Company"} footer={"1"} linkname={"\company"} newop={1} /></li>
+                <li className='my-5'><LinkButton1 title={"Opportunities"} footer={"1"} linkname={"\opportunities"}  newop={1} /></li>
               </ul>
             </div>
             <div className="w-1/2 mb-6 md:w-1/4">
