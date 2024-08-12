@@ -17,7 +17,7 @@ const Load = () => {
 			}
 		  }
 		  .mkd-rotate {
-			animation: rotate 2s linear infinite;
+			animation: rotate 1.5s linear infinite;
 		  }
 		`}</style>
 		<img 
