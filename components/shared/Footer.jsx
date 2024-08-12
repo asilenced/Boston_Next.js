@@ -74,7 +74,7 @@ const Footer = () => {
               <h3 className="mb-3 text-lg font-semibold" style={{ fontSize: "17px" }}>Overview</h3>
               <ul style={{ fontSize: "14px" }}>
                 <li className='my-5'><LinkButton1 title={"Projects"} footer={"1"} linkname={"\projects"} newop={1} /></li>
-                <li className='my-5'><LinkButton1 title={"Partner"} footer={"1"} linkname={"\partner"} newop={1} /></li>
+                <li className='my-5'><LinkButton1 title={"Partner"} footer={"1"} linkname={"\partners"} newop={1} /></li>
                 <li className='my-5'><LinkButton1 title={"Our Company"} footer={"1"} linkname={"\company"} newop={1} /></li>
                 <li className='my-5'><LinkButton1 title={"Opportunities"} footer={"1"} linkname={"\opportunities"}  newop={1} /></li>
               </ul>
@@ -85,7 +85,7 @@ const Footer = () => {
                 <li className='my-5'><LinkButton1 title={"About Us"} footer={"1"} linkname={""} /></li>
                 <li className='my-5'><LinkButton1 title={"Blogs"} footer={"1"} linkname={""} /></li>
                 <li className='my-5'><LinkButton1 title={"Testimonials"} footer={"1"} linkname={""} /></li>
-                <li className='my-5'><LinkButton1 title={"Careers"} footer={"1"} linkname={""} /></li>
+                <li className='my-5'><LinkButton1 title={"Careers"} footer={"1"} linkname={"/opportunities"} newop={1} /></li>
               </ul>
             </div>
             <div className="w-1/2 mb-6 md:w-1/4">
@@ -101,8 +101,8 @@ const Footer = () => {
             <div className="w-1/2 mb-6 md:w-1/4">
               <h3 className="mb-3 text-lg font-semibold" style={{ fontSize: "17px" }}>Legal</h3>
               <ul style={{ fontSize: "14px", lineHeight: "20px" }}>
-                <li className='my-5'><LinkButton1 title={"Privacy"} title1={"Policy"} footer={"1"} linkname={""} /></li>
-                <li className='my-5'><LinkButton1 title={"Terms &"} title1={"Conditions"} footer={"1"} linkname={""} /></li>
+                <li className='my-5'><LinkButton1 title={"Privacy"} title1={"Policy"} footer={"1"} linkname={"https://app.termly.io/policy-viewer/policy.html?policyUUID=bca2996e-edde-4a51-a51a-31d85548082d"} /></li>
+                <li className='my-5'><LinkButton1 title={"Terms &"} title1={"Conditions"} footer={"1"} linkname={" https://app.termly.io/policy-viewer/policy.html?policyUUID=5b377c34-8128-4799-8ba5-1f221a6d5b5c"} /></li>
                 <li className='my-5'><LinkButton1 title={"Help"} footer={"1"} linkname={""} /></li>
               </ul>
             </div>
