@@ -102,7 +102,7 @@ const Footer = () => {
               <h3 className="mb-3 text-lg font-semibold" style={{ fontSize: "17px" }}>Legal</h3>
               <ul style={{ fontSize: "14px", lineHeight: "20px" }}>
                 <li className='my-5'><LinkButton1 title={"Privacy"} title1={"Policy"} footer={"1"} linkname={"/privacy.html"} /></li>
-                <li className='my-5'><LinkButton1 title={"Terms &"} title1={"Conditions"} footer={"1"} linkname={"/terms.html"} /></li>
+                <li className='my-5'><LinkButton1 title={"Terms &"} title1={"Conditions"} footer={"1"} linkname={"/policy.html"} /></li>
                 <li className='my-5'><LinkButton1 title={"Help"} footer={"1"} linkname={""} /></li>
               </ul>
             </div>
