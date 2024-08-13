@@ -101,8 +101,8 @@ const Footer = () => {
             <div className="w-1/2 mb-6 md:w-1/4">
               <h3 className="mb-3 text-lg font-semibold" style={{ fontSize: "17px" }}>Legal</h3>
               <ul style={{ fontSize: "14px", lineHeight: "20px" }}>
-                <li className='my-5'><LinkButton1 title={"Privacy"} title1={"Policy"} footer={"1"} linkname={"https://app.termly.io/policy-viewer/policy.html?policyUUID=bca2996e-edde-4a51-a51a-31d85548082d"} /></li>
-                <li className='my-5'><LinkButton1 title={"Terms &"} title1={"Conditions"} footer={"1"} linkname={" https://app.termly.io/policy-viewer/policy.html?policyUUID=5b377c34-8128-4799-8ba5-1f221a6d5b5c"} /></li>
+                <li className='my-5'><LinkButton1 title={"Privacy"} title1={"Policy"} footer={"1"} linkname={"/privacy.html"} /></li>
+                <li className='my-5'><LinkButton1 title={"Terms &"} title1={"Conditions"} footer={"1"} linkname={"/terms.html"} /></li>
                 <li className='my-5'><LinkButton1 title={"Help"} footer={"1"} linkname={""} /></li>
               </ul>
             </div>
