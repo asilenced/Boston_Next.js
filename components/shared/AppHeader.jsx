@@ -31,7 +31,7 @@ function AppHeader() {
 				
 				<div className='items-center justify-center hidden p-5 m-0 mt-5 shadow-lg font-general-medium lg:ml-4 lg:mt-3 xl:flex lg:p-0 lg:shadow-none'>
 					<LinkButton linkname={""} title={"Log In"} width={70}  />
-					<Link href="https://calendly.com/nicholasirving-v_v1/30min" target='_blank' rel="noopener noreferrer">
+					<Link href="https://calendly.com/outreach-bostoninnovations/30min" target='_blank' rel="noopener noreferrer">
 						<button
 							style={{fontFamily: "Helvetica, Arial, sans-serif"}}
 							className="

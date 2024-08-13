@@ -116,7 +116,7 @@ const Footer = () => {
                   className='inline mr-2'
                   alt="Phone"
                 />
-                <Link href="https://calendly.com/nicholasirving-v_v1/30min" className="hover:underline" target='_blank'>Schedule a Demo Today</Link>
+                <Link href="https://calendly.com/outreach-bostoninnovations/30min" className="hover:underline" target='_blank'>Schedule a Demo Today</Link>
               </div>
               <div style={{fontSize: "17px"}} className='flex lg:my-5 lg:w-full'>
                 <Image src={contactemail}

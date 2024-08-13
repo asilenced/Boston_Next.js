@@ -88,7 +88,7 @@ const MenuModal = ({ showMenu, toggleMenu }) => {
               title === 'Our Company' ? <Link href={'company'} aria-label={title}><HeaderButton title={title} index={index} /></Link> : 
               title === 'Opportunities' ? <Link href={'opportunities'} aria-label={title}><HeaderButton title={title} index={index} /></Link> : 
               title === 'Log In' ? <Link href={''} aria-label={title}><HeaderButton title={title} index={index} /></Link> : 
-              title === 'Book Meeting' ? <Link href={'https://calendly.com/nicholasirving-v_v1/30min'} aria-label={title} target='_blank' rel="noopener noreferrer"><HeaderButton title={title} index={index} /></Link> : ''
+              title === 'Book Meeting' ? <Link href={'https://calendly.com/outreach-bostoninnovations/30min'} aria-label={title} target='_blank' rel="noopener noreferrer"><HeaderButton title={title} index={index} /></Link> : ''
             }
             </>
         ))}
